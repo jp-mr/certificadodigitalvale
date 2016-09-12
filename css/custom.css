@@ -1,0 +1,220 @@
+/* Navbar
+ *--------------------------------------------------*/
+
+
+
+/* Intro
+ *--------------------------------------------------*/
+
+
+
+/* Certificação Digital
+ *--------------------------------------------------*/
+
+
+
+/* Credit Service
+ *--------------------------------------------------*/
+
+
+
+/* Mapa
+ *--------------------------------------------------*/
+
+.map {
+  padding-top:97px;
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+
+
+/* Contato
+ *--------------------------------------------------*/
+
+
+
+
+
+/* Resposividade
+ *--------------------------------------------------*/
+
+/* Small devices (Smatphones, larguras até 500px) */
+@media (max-width: 500px) {
+
+
+}
+
+
+/* Small devices (tablets, larguras até 600px) */
+@media (max-width: 600px) {
+
+  /* Mapa
+   *----------------------------------*/
+  .embed-responsive-16by9 {
+    padding-bottom: 100%;
+  }
+
+}
+
+
+/* Small devices (tablets, larguras até 980px) */
+@media (max-width: 980px) {
+
+  /* Mapa
+   *----------------------------------*/
+  .embed-responsive-16by9 {
+    padding-bottom: 70%;
+  }
+
+}
+
+
+/* Small devices (tablets, larguras a partir de 600px) */
+@media (min-width: 600px) {
+
+  /* Intro
+   *----------------------------------*/
+
+
+  /* Contato
+   *----------------------------------*/
+
+
+}
+
+
+/* Small devices (tablets, larguras a partir de 768px) */
+@media (min-width: 768px) {
+
+  /* Navbar
+   *----------------------------------*/
+
+  /* Intro
+   *----------------------------------*/
+
+
+
+  /* Certificação Digital
+   *----------------------------------*/
+
+
+
+  /* Credit Service
+   *----------------------------------*/
+
+
+
+  /* Contato
+   *----------------------------------*/
+
+
+
+
+/* Medium devices (tablets, larguras a partir de 980px) */
+@media (min-width: 980px) {
+
+  /* Intro
+   *----------------------------------*/
+
+
+}
+
+
+
+/* Medium devices (desktops, larguras a partir de 1024px) */
+@media (min-width: 1024px) {
+
+  /* Intro
+   *----------------------------------*/
+
+
+
+  /* Contato
+   *----------------------------------*/
+
+
+}
+
+
+
+/* Medium devices (desktops, larguras a partir de 1024px e comprimentos até 768px) */
+@media (min-width: 1024px) and (min-height: 768px) {
+
+  /* Intro
+   *----------------------------------*/
+
+
+}
+
+
+/* Large devices (large desktops, larguras a partir de 1200px) */
+@media (min-width: 1200px) {
+
+  /* Navbar
+   *----------------------------------*/
+
+
+
+
+  /* Intro
+   *----------------------------------*/
+
+
+
+
+  /* Mapa
+   *----------------------------------*/
+  .embed-responsive-16by9 {
+      padding-bottom: 30%;
+  }
+
+
+  /* Contato
+   *----------------------------------*/
+
+
+}
+
+
+/* Large devices (large desktops, larguras a partir de 1900px) */
+@media (min-width: 1900px) {
+
+  /* Intro
+   *----------------------------------*/
+
+}
+
+
+/* Large devices (large desktops, larguras até 1200px) */
+@media (max-width: 1200px) {
+
+  .container {
+    width:100%;
+  }
+  
+}
+
+
+/* Small devices (tablets, larguras entre 768px e 1200px) */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  /* Navbar
+   *----------------------------------*/
+
+
+}
+
+
+/* Small devices (tablets, larguras entre 768px e 900px) */
+
+@media (min-width: 768px) and  (max-width: 900px) {
+
+  /* Navbar
+   *----------------------------------*/
+ 
+
+}
