@@ -1,0 +1,25 @@
+## python files to ignore
+*.pyc
+**/migrations/*  
+
+## 
+*.src
+public/
+public/
+
+## DevEnv
+LEIA-ME_ENV-DEV
+cores.txt
+scss/
+font-awesome-4.6.3/
+fonts/
+css/bootstrap.css
+js/bootstrap.js
+
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
