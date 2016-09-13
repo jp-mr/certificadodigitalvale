@@ -1,5 +1,156 @@
+/* Fontes
+ *--------------------------------------------------*/
+
+@font-face {
+  font-family: 'katirka';
+  src: url("../fontes/KARTIKA.eot"); /* EOT file for IE */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kartika';
+  src: local("KARTIKA.TTF"), url("../fontes/KARTIKA.TTF"); /* TTF file for CSS3 browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: 'kartikaBold';
+  src: url("../fontes/KARTIKAB.eot"); /* EOT file for IE
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: kartikaBold;
+  src: local("KARTIKAB.TTF"), url("../fontes/KARTIKAB.TTF"); /* TTF file for CSS3 browsers
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+
+@font-face {
+  font-family: khmerui;
+  src: url("fontes/KHMERUI.eot"); /* EOT file for IE */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: khmerui;
+  src: local("fontes/KHMERUI.TTF"), url("fontes/KHMERUI.TTF"); /* TTF file for CSS3 browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: khmeruiBold;
+  src: url("fontes/KHMERUIB.eot"); /* EOT file for IE 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: khmeruiBold;
+  src: local("fontes/KHMERUIB.TTF"), url("fontes/KHMERUIB.TTF"); /* TTF file for CSS3 browsers
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+
 /* Navbar
  *--------------------------------------------------*/
+.navbar {
+  min-height: 105px;
+}
+
+.navbar-brand {
+  width: 250px;
+  height: 70px;
+  padding: 0px 0px;
+  margin: 15px 0px!important;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #e8e8e8;
+}
+
+.navbar-default .navbar-nav li a,
+.navbar-default .btn-link {
+  font-family: 'kartika';
+  font-size: 1.1em;
+  color: #2479bc;
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+  color: #3bafda;
+  background-color: #fff;
+}
+
+.navbar-default .btn-link {
+  color: #2479bc;
+}
+
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #3bafda;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #2479bc;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: #3bafda;
+  background-color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #2479bc;
+  border-color: #2479bc;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+  background-color: #3bafda;
+  border-color: #3bafda;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  margin-top: 28px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #e8e8e8;
+}
+
+.navbar-brand .img-responsive {
+  max-width: 75%;
+  margin-left: 5px;
+}
 
 
 
@@ -91,6 +242,15 @@
 
   /* Navbar
    *----------------------------------*/
+
+  .navbar-default .container {
+    padding-right: 0px
+  }
+
+  .navbar-collapse {
+    padding-right: 0px;    
+  }
+
 
   /* Intro
    *----------------------------------*/

@@ -44,9 +44,9 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container">
-          <div class="navbar-header page-scroll">
+          <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -54,8 +54,8 @@
                     <span class="icon-bar"></span>
                   </button>
 
-                  <a class="navbar-brand page-scroll" href="#">
-                    <img class="img-responsive" src="img/logo-mult-corel.png"></img>
+                  <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="img/logo_lg.png"></img>
                   </a>
                   
           </div>
@@ -67,16 +67,29 @@
                         <a class="" href="#"></a>
                     </li>
                     <li>
-                        <a class="" href="#">Certificação Digital</a>
+                      <div class="btn-group">
+                        <button type="button" 
+                                class="btn btn-link dropdown-toggle" 
+                                data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                          CERTIFICAÇÃO DIGITAL 
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">E-CNPJ</a></li>
+                          <li><a href="#">E-CPF</a></li>
+                          <li><a href="#">NF-E</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
-                        <a class="" href="#">Credit Service</a>
+                        <a class="" href="#">CREDIT SERVICE</a>
                     </li>
                     <li>
-                        <a class="" href="#">Mapa</a>
+                        <a class="" href="#">MAPA</a>
                     </li>
                     <li>
-                        <a class="" href="#">Contato</a>
+                        <a class="" href="#">CONTATO</a>
                     </li>
                 </ul>
             </div>
@@ -121,9 +134,11 @@
 
     <!-- jQuery -->
     <script src="js/jquery-1.10.1.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
