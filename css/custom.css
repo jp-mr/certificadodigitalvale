@@ -30,6 +30,21 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'khmeruiBold';
+  src: url("../fontes/KHMERUIB.eot"); /* EOT file for IE */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'khmeruiBold';
+  src: local("../fontes/KHMERUIB.TTF"), url("../fontes/KHMERUIB.TTF"); /* TTF file for CSS3 browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
 @font-face {
   font-family: 'kartikaBold';
@@ -47,24 +62,6 @@
 }
 */
 
-
-
-/*
-@font-face {
-  font-family: khmeruiBold;
-  src: url("../fontes/KHMERUIB.eot"); /* EOT file for IE 
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: khmeruiBold;
-  src: local("../fontes/KHMERUIB.TTF"), url("fontes/KHMERUIB.TTF"); /* TTF file for CSS3 browsers
-  font-weight: normal;
-  font-style: normal;
-}/
-*/
 
 
 /* Navbar
@@ -213,8 +210,11 @@
 .cert-digit-section {
   margin: 0px;
   font-family: 'khmerui';
-  font-size: 1em;
-  color: #fff;
+}
+
+.cert-digit-section h1,
+.cert-digit-section p {
+  color: #8c8c8c;
 }
 
 .cert-digit-section .jumbotron {
@@ -234,9 +234,15 @@
 /* Credit Service
  *--------------------------------------------------*/
 
+.credit-service-section {
+  margin: 0px;
+  font-family: 'khmerui';
+}
+
 .credit-service-bg {
   height: 110px;
   text-align: center;
+  margin-bottom: 50px;
   background: url(../img/credit-service-home.jpg) no-repeat center center scroll;
   -pie-background: url(../img/credit-service-home.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -247,11 +253,55 @@
   behavior: url(PIE.htc);
 }
 
-.credit-service-section h1 {
+.credit-service-section .credit-service-bg h1 {
   font-family: 'kartika';
   font-size: 2.15em;
   margin-top: 43px;
 }
+
+.credit-service-section .jumbotron .jumbotron-contents {
+  padding: 0px 15px 20px 15px;
+}
+
+.credit-service-section .jumbotron-contents h1 {
+  font-family: 'khmeruiBold';
+  font-size: 3em;
+  margin-top: 0px;
+}
+
+.credit-service-section .jumbotron-contents h3 {
+  margin-top: 0px;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.credit-service-section .jumbotron-contents h4 {
+  font-family: 'khmeruiBold';
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.credit-service-section h1,
+.credit-service-section h3,
+.credit-service-section h4,
+.credit-service-section p {
+  color: #8c8c8c;
+}
+
+.credit-service-section .jumbotron {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 50px;
+}
+
+.credit-service-section .btn {
+  font-family: 'kartika';
+  width: 60%;
+  margin: 32px auto 10px auto;
+  font-weight: bold;
+}
+
+
 
 
 /* Mapa
