@@ -178,6 +178,10 @@
   behavior: url(PIE.htc);
 }
 
+.intro-section .hide-img {
+  display: none;
+}
+
 .intro-section .img-responsive {
   margin: 10px 0px;
 }
@@ -322,6 +326,51 @@
 
 
 
+/* Rodapé
+ *--------------------------------------------------*/
+
+.footer-section {
+  height: 100%;
+  margin-top: 50px;
+  font-family: 'khmerui';
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.footer-section .img-footer {
+  margin: 20px 0px 20px 0px;
+}
+
+.footer-section p {
+  text-align: right;
+  margin: 20px 0px 70px 0px;
+  color: #5b5b5b
+}
+
+.footer-section .cpright {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -120px;
+  color: #5b5b5b;
+}
+
+.footer-section i {
+  color: #3b5998;
+}
+
+.footer-section i:hover {
+  color: #1553d4;
+}
+
+.footer-section a {
+ color: #3b5998;
+}
+
+.footer-section a:hover{
+ color: #3b5998;
+ text-decoration: underline;
+}
 
 
 /* Resposividade
@@ -336,6 +385,7 @@
 
 /* Small devices (tablets, larguras até 600px) */
 @media (max-width: 600px) {
+
 
   /* Mapa
    *----------------------------------*/
@@ -363,6 +413,10 @@
 
   /* Intro
    *----------------------------------*/
+
+  .intro-section .hide-img {
+    display: inherit;
+  }
 
 
   /* Contato
@@ -406,6 +460,16 @@
    *----------------------------------*/
 
 
+  /* Rodapé
+   *----------------------------------*/
+
+  .footer-section .img-footer {
+    margin: 20px 0px 100px 0px;
+  }
+  
+  .footer-section p {
+    margin: 20px 0px 100px 0px;
+  }
 
 
 /* Medium devices (tablets, larguras a partir de 980px) */
