@@ -2,14 +2,30 @@
  *--------------------------------------------------*/
 
 @font-face {
-  font-family: 'katirka';
+  font-family: 'kartika';
   src: url("../fontes/KARTIKA.eot"); /* EOT file for IE */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'kartika';
-  src: local("KARTIKA.TTF"), url("../fontes/KARTIKA.TTF"); /* TTF file for CSS3 browsers */
+  src: local("../fontes/KARTIKA.TTF"), url("../fontes/KARTIKA.TTF"); /* TTF file for CSS3 browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'khmerui';
+  src: url("../fontes/KHMERUI.eot"); /* EOT file for IE */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'khmerui';
+  src: local("../fontes/KHMERUI.TTF"), url("../fontes/KHMERUI.TTF"); /* TTF file for CSS3 browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -25,32 +41,18 @@
 
 @font-face {
   font-family: kartikaBold;
-  src: local("KARTIKAB.TTF"), url("../fontes/KARTIKAB.TTF"); /* TTF file for CSS3 browsers
+  src: local("../fontes/KARTIKAB.TTF"), url("../fontes/KARTIKAB.TTF"); /* TTF file for CSS3 browsers
   font-weight: normal;
   font-style: normal;
 }
 */
 
 
-@font-face {
-  font-family: khmerui;
-  src: url("fontes/KHMERUI.eot"); /* EOT file for IE */
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: khmerui;
-  src: local("fontes/KHMERUI.TTF"), url("fontes/KHMERUI.TTF"); /* TTF file for CSS3 browsers */
-  font-weight: normal;
-  font-style: normal;
-}
 
 /*
 @font-face {
   font-family: khmeruiBold;
-  src: url("fontes/KHMERUIB.eot"); /* EOT file for IE 
+  src: url("../fontes/KHMERUIB.eot"); /* EOT file for IE 
   font-weight: normal;
   font-style: normal;
 }
@@ -58,10 +60,10 @@
 
 @font-face {
   font-family: khmeruiBold;
-  src: local("fontes/KHMERUIB.TTF"), url("fontes/KHMERUIB.TTF"); /* TTF file for CSS3 browsers
+  src: local("../fontes/KHMERUIB.TTF"), url("fontes/KHMERUIB.TTF"); /* TTF file for CSS3 browsers
   font-weight: normal;
   font-style: normal;
-}
+}/
 */
 
 
@@ -69,6 +71,7 @@
  *--------------------------------------------------*/
 .navbar {
   min-height: 105px;
+  margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -157,6 +160,36 @@
 /* Intro
  *--------------------------------------------------*/
 
+.intro-section {
+  font-family: 'khmerui';
+  font-size: 1em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.intro-bg {
+  height: 550px;
+  text-align: center;
+  background: url(../img/intro-bg.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/intro-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0px;
+  behavior: url(PIE.htc);
+}
+
+.intro-section .img-responsive {
+  margin: 10px 0px;
+}
+
+
+.intro-section p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3em;
+}
 
 
 /* Certificação Digital
