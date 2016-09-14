@@ -165,10 +165,11 @@
   font-size: 1em;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
+  margin-bottom: 50px;
 }
 
 .intro-bg {
-  height: 550px;
+  height: 100%;
   text-align: center;
   background: url(../img/intro-bg.jpg) no-repeat center center scroll;
   -pie-background: url(../img/intro-bg.jpg) no-repeat center center fixed;
@@ -184,22 +185,73 @@
   margin: 10px 0px;
 }
 
-
 .intro-section p {
   margin-top: 20px;
   text-align: center;
   font-size: 1.3em;
 }
 
+.intro-section a {
+  color: #fff;
+}
+
+.intro-section a:hover,
+.intro-section a:focus {
+  color: #3bafda;
+}
+
+.intro-section .config-CertDigit {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
 
 /* Certificação Digital
  *--------------------------------------------------*/
 
+.cert-digit-section {
+  margin: 0px;
+  font-family: 'khmerui';
+  font-size: 1em;
+  color: #fff;
+}
+
+.cert-digit-section .jumbotron {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 50px;
+}
+
+.cert-digit-section .btn {
+  font-family: 'kartika';
+  width: 60%;
+  margin: 32px auto 10px auto;
+  font-weight: bold;
+}
 
 
 /* Credit Service
  *--------------------------------------------------*/
 
+.credit-service-bg {
+  height: 110px;
+  text-align: center;
+  background: url(../img/credit-service-home.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/credit-service-home.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 85% 0px;
+  behavior: url(PIE.htc);
+}
+
+.credit-service-section h1 {
+  font-family: 'kartika';
+  font-size: 2.15em;
+  margin-top: 43px;
+}
 
 
 /* Mapa
