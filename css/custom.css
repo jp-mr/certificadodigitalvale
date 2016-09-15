@@ -143,7 +143,13 @@
   margin-bottom: 8px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar .btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
   border-color: #e8e8e8;
 }
 
@@ -165,6 +171,11 @@
   margin-bottom: 50px;
 }
 
+.intro-section .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .intro-bg {
   height: 100%;
   text-align: center;
@@ -183,7 +194,12 @@
 }
 
 .intro-section .img-responsive {
-  margin: 10px 0px;
+  margin: 60px auto 30px auto;
+
+}
+
+.intro-section h2 {
+  font-weight: lighter;
 }
 
 .intro-section p {
@@ -208,7 +224,7 @@
 
 
 
-/* Certificação Digital
+/* Certificado Digital
  *--------------------------------------------------*/
 
 .cert-digit-section {
@@ -230,6 +246,7 @@
 .cert-digit-section .btn {
   font-family: 'kartika';
   width: 60%;
+  padding: 7px 12px 5px 12px;
   margin: 32px auto 10px auto;
   font-weight: bold;
 }
@@ -246,7 +263,8 @@
 .credit-service-bg {
   height: 110px;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 0px 0px 50px 0px;
+  position: relative;
   background: url(../img/credit-service-home.jpg) no-repeat center center scroll;
   -pie-background: url(../img/credit-service-home.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -260,7 +278,11 @@
 .credit-service-section .credit-service-bg h1 {
   font-family: 'kartika';
   font-size: 2.15em;
-  margin-top: 43px;
+  position: absolute;
+  top: 50%;
+  margin-top: -16.79px;
+  left: 50%;
+  margin-left: -143.97px;
 }
 
 .credit-service-section .jumbotron .jumbotron-contents {
@@ -301,6 +323,7 @@
 .credit-service-section .btn {
   font-family: 'kartika';
   width: 60%;
+  padding: 7px 12px 5px 12px;
   margin: 32px auto 10px auto;
   font-weight: bold;
 }
@@ -418,10 +441,47 @@
     display: inherit;
   }
 
+  .intro-section h2 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  .intro-section p {
+    text-align: justify;
+  }
+
+
+  /* Certificado Digital
+   *----------------------------------*/
+
+  .cert-digit-section .jumbotron {
+  margin: 0px 70px 50px 70px;
+  }
+
+  .cert-digit-section .btn {
+    width: 33%;
+  }
+
+  /* Credit Service
+   *----------------------------------*/
+
+  .credit-service-section .jumbotron {
+  margin: 0px 70px 50px 70px;
+  }
+
+
+  .credit-service-section .btn {
+    width: 33%;
+  }
+
+  .credit-service-section #credit-service-group .btn {
+    width: 45%;
+  }
+
+
 
   /* Contato
    *----------------------------------*/
-
 
 }
 
@@ -440,20 +500,59 @@
     padding-right: 0px;    
   }
 
+  .navbar-default {
+    border-color: #fff;
+  }
+
+  .navbar-default .navbar-collapse {
+    margin-top: 28px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+  }
+
+  .navbar-default .navbar-nav li a,
+  .navbar-default .btn-link {
+    font-size: 0.82em;
+  }
 
   /* Intro
    *----------------------------------*/
 
+  .intro-section h2 {
+    font-size: 4.5em;
+  }
 
 
   /* Certificação Digital
    *----------------------------------*/
 
+  .cert-digit-section .jumbotron {
+    min-height: 629.4px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .cert-digit-section .btn {
+    width: 50%;
+  }
 
 
   /* Credit Service
    *----------------------------------*/
 
+  .credit-service-section .credit-service-bg h1 {
+    font-size: 3em;
+    margin-top: -19.79px;
+    margin-left: -204.87px;
+  }
+  
+
+  .credit-service-section .jumbotron {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .credit-service-section #credit-service-group .btn {
+    width: 75%;
+  }
 
 
   /* Contato
@@ -475,8 +574,37 @@
 /* Medium devices (tablets, larguras a partir de 980px) */
 @media (min-width: 980px) {
 
+  /* Navbar
+   *----------------------------------*/
+
+  .navbar-default .navbar-nav li a,
+  .navbar-default .btn-link {
+    font-size: 1.1em;
+  }
+
   /* Intro
    *----------------------------------*/
+  
+
+
+  /* Certificado Digital
+   *----------------------------------*/
+
+  .cert-digit-section .btn {
+    width: 35%;
+  }
+
+
+  /* Credit Service
+   *----------------------------------*/
+
+  .credit-service-section .btn {
+    width: 28%;
+  }
+
+  .credit-service-section #credit-service-group .btn {
+    width: 55%;
+  }
 
 
 }
@@ -489,6 +617,32 @@
   /* Intro
    *----------------------------------*/
 
+
+
+  /* Certificado Digital
+   *----------------------------------*/
+
+  .cert-digit-section .btn {
+    width: 50%;
+  }
+
+
+
+  /* Credit Service
+   *----------------------------------*/
+
+  .credit-service-section .btn {
+    width: 33%;
+  }
+
+  .credit-service-section #credit-service-group .btn {
+    width: 75%;
+  }
+
+
+  .credit-service-section .jumbotron {
+    margin-bottom: 28px;
+  }
 
 
   /* Contato
@@ -510,18 +664,24 @@
 
 
 /* Large devices (large desktops, larguras a partir de 1200px) */
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
+
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 
   /* Navbar
    *----------------------------------*/
 
 
-
-
-  /* Intro
+  /* Credit Service
    *----------------------------------*/
 
-
+  .credit-service-bg {
+    margin: 0px 13px 50px 13px;
+  }
 
 
   /* Mapa
