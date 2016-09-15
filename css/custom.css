@@ -400,14 +400,14 @@
  *--------------------------------------------------*/
 
 /* Small devices (Smatphones, larguras até 500px) */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
 
 }
 
 
 /* Small devices (tablets, larguras até 600px) */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 
   /* Mapa
@@ -420,7 +420,7 @@
 
 
 /* Small devices (tablets, larguras até 980px) */
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
   /* Mapa
    *----------------------------------*/
@@ -432,7 +432,7 @@
 
 
 /* Small devices (tablets, larguras a partir de 600px) */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
   /* Intro
    *----------------------------------*/
@@ -487,7 +487,7 @@
 
 
 /* Small devices (tablets, larguras a partir de 768px) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   /* Navbar
    *----------------------------------*/
@@ -572,7 +572,7 @@
 
 
 /* Medium devices (tablets, larguras a partir de 980px) */
-@media (min-width: 980px) {
+@media screen and (min-width: 980px) {
 
   /* Navbar
    *----------------------------------*/
@@ -612,7 +612,7 @@
 
 
 /* Medium devices (desktops, larguras a partir de 1024px) */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
   /* Intro
    *----------------------------------*/
@@ -654,7 +654,7 @@
 
 
 /* Medium devices (desktops, larguras a partir de 1024px e comprimentos até 768px) */
-@media (min-width: 1024px) and (min-height: 768px) {
+@media screen and (min-width: 1024px) and (min-height: 768px) {
 
   /* Intro
    *----------------------------------*/
@@ -664,7 +664,7 @@
 
 
 /* Large devices (large desktops, larguras a partir de 1200px) */
-@media (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
 
   .container {
     padding-left: 0px;
@@ -699,7 +699,7 @@
 
 
 /* Large devices (large desktops, larguras a partir de 1900px) */
-@media (min-width: 1900px) {
+@media screen and (min-width: 1900px) {
 
   /* Intro
    *----------------------------------*/
@@ -708,7 +708,7 @@
 
 
 /* Large devices (large desktops, larguras até 1200px) */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
   .container {
     width:100%;
@@ -719,7 +719,7 @@
 
 /* Small devices (tablets, larguras entre 768px e 1200px) */
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
   /* Navbar
    *----------------------------------*/
@@ -730,7 +730,7 @@
 
 /* Small devices (tablets, larguras entre 768px e 900px) */
 
-@media (min-width: 768px) and  (max-width: 900px) {
+@media screen and (min-width: 768px) and  (max-width: 900px) {
 
   /* Navbar
    *----------------------------------*/
