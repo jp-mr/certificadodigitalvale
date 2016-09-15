@@ -438,7 +438,7 @@
    *----------------------------------*/
 
   .intro-section .hide-img {
-    display: inherit;
+    display: block;
   }
 
   .intro-section h2 {
