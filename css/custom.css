@@ -222,7 +222,27 @@
   margin-bottom: 10px;
 }
 
+.modal {
+  font-family: 'khmerui';
+  top: 10%;
+}
 
+.modal-header {
+  padding: 15px 15px 5px 15px;
+}
+
+.modal-body {
+  padding: 5px 15px 5px 15px;
+}
+
+.modal-body ul {
+  padding-left: 13px;
+}
+
+.modal-header hr {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
 
 /* Certificado Digital
  *--------------------------------------------------*/
@@ -342,6 +362,11 @@
   pointer-events: none;
 }
 
+.map .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 
 /* Contato
@@ -356,8 +381,11 @@
   height: 100%;
   margin-top: 50px;
   font-family: 'khmerui';
-  background-color: #f8f8f8;
   position: relative;
+}
+
+.footer-section .container {
+  background-color: #f8f8f8;
 }
 
 .footer-section .img-footer {
@@ -412,9 +440,7 @@
 
   /* Mapa
    *----------------------------------*/
-  .embed-responsive-16by9 {
-    padding-bottom: 100%;
-  }
+ 
 
 }
 
@@ -424,9 +450,7 @@
 
   /* Mapa
    *----------------------------------*/
-  .embed-responsive-16by9 {
-    padding-bottom: 70%;
-  }
+
 
 }
 
@@ -548,6 +572,10 @@
     font-size: 4.5em;
   }
 
+  .intro-section .config-CertDigit {
+    padding-right: 127px;
+  }
+
 
   /* Certificação Digital
    *----------------------------------*/
@@ -593,7 +621,7 @@
   }
   
   .footer-section p {
-    margin: 20px 0px 100px 0px;
+    margin: 20px 10px 100px 0px;
   }
 
 
@@ -655,6 +683,10 @@
 
   .intro-section p {
     font-size: 1.4em;
+  }
+
+  .intro-section .config-CertDigit {
+    padding-right: 18px;
   }
 
   .intro-section small {
@@ -736,13 +768,18 @@
 
   /* Mapa
    *----------------------------------*/
-  .embed-responsive-16by9 {
-      padding-bottom: 30%;
+
+
+  /* Rodapé
+   *----------------------------------*/
+
+  .footer-section .img-footer {
+    margin: 20px 0px 20px 20px;
   }
 
-
-  /* Contato
-   *----------------------------------*/
+  .footer-section p {
+    margin: 20px 20px 70px 0px;
+  }
 
 
 }
