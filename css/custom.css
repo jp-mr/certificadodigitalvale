@@ -63,7 +63,6 @@
 */
 
 
-
 /* Navbar
  *--------------------------------------------------*/
 .navbar {
@@ -159,6 +158,7 @@
 }
 
 
+/* ################### HOME ########################*/
 
 /* Intro
  *--------------------------------------------------*/
@@ -368,10 +368,38 @@
 }
 
 
-
 /* Contato
  *--------------------------------------------------*/
 
+
+
+/* ################# Fim HOME ######################*/
+
+
+/* ################# e-CNPJ ########################*/
+
+.header-section .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.header-section .img-responsive {
+  margin: 18px 0px; /*63*/
+}
+
+.ecnpj-banner {
+  text-align: center;
+  background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  behavior: url(PIE.htc);
+}
+
+/* ################# Fim e-CNPJ ####################*/
 
 
 /* Rodapé
