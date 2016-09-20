@@ -384,7 +384,7 @@
 }
 
 .header-section .img-responsive {
-  margin: 18px 0px; /*63*/
+  margin: 18px 0px 18px 0px;
 }
 
 .ecnpj-banner {
@@ -399,7 +399,7 @@
   behavior: url(PIE.htc);
 }
 
-#e-cnpj h3 {
+.table-section h3 {
   font-family: 'khmeruiBold';
   font-size: 2.5em;
   font-weight: lighter;
@@ -408,26 +408,26 @@
   margin-bottom: 5px
 }
 
-#e-cnpj .square .name-product > h3 + h3 {
+.table-section .square .name-product > h3 + h3 {
   font-size: 2em;
 }
 
-#e-cnpj h4,
-#e-cnpj h5 {
+.table-section h4,
+.table-section h5 {
   font-family: 'khmeruiBold';
   font-weight: lighter;
   color: #fff;
 }
 
-#e-cnpj h4 {
+.table-section h4 {
   font-size: 2.5em;
 }
 
-#e-cnpj h5 {
+.table-section h5 {
   font-size: 2em;
 }
 
-#e-cnpj .img-product {
+.table-section .img-product {
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 0px 0px 1px;
@@ -437,45 +437,55 @@
   margin: 0px auto;
 }
 
-#e-cnpj .title-product {
+.table-section .title-product {
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 1px 0px 0px;
 }
 
-#e-cnpj .meses12 {
+.table-section .meses12 {
   background-color: #dc0056;
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 1px 0px 0px;
 }
 
-#e-cnpj .meses24 {
+.table-section .meses24 {
   background-color: #23b24b;
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 1px 0px 0px;
 }
 
-#e-cnpj .meses36 {
+.table-section .meses36 {
   background-color: #2b93fe;
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 0px 0px 0px;
 }
 
-#e-cnpj .container {
+.table-section .no-image {
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 1px;
+}
+
+.table-section .last {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.table-section .container {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-#e-cnpj .row {
+.table-section .row {
   margin-top: 80px;
   margin-right: 0px;
   margin-left: 0px;
 }
 
-#e-cnpj .first-row {
+.table-section .first-row {
   margin-top: 0px;
 }
 
@@ -493,11 +503,16 @@
     padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
 }
 
+.no-image {
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+}
+
 .content {
     position:absolute;
     height:100%; /* = 100% - 2*5% padding */
     width:100%; /* = 100% - 2*5% padding */
-    padding: 5%;
+    padding: 0%;
     
 }
 
@@ -512,164 +527,27 @@
     vertical-align:middle;
 }
 
-/*  For responsive images */
-.content .rs  {
-    width:auto;
-    height:auto;
-    max-height:90%;
-    max-width:100%;
-}
 
-/*  For responsive images as background */
-.bg{
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
-    color:#fff;
-}
-
-.img1{
-    background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
-}
-.img2{
-    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
-}
-.img3{
-    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
-}
-
-
-
-/*
- * TABLET E DESKTOP
- *
- *
-
- #e-cnpj h3 {
+.accordion-section h4 {
   font-family: 'khmeruiBold';
-  font-size: 2.5em;
   font-weight: lighter;
+  font-size: 1.7em;
+  padding: 0px 15px;
+  margin: 80px 0px 20px 0px;
   color: #8c8c8c;
-  margin-top: 0px;
-  margin-bottom: 5px
 }
 
-#e-cnpj .square .name-product > h3 + h3 {
-  font-size: 2em;
+.panel-group-lists .panel-title a {
+  font-family: 'khmeruiBold';
+  font-size: 1.4em;
+  color: #8c8c8c;
 }
 
-#e-cnpj h4,
-#e-cnpj h5 {
+.panel-body {
   font-family: 'khmerui';
-  font-size: 1.5em;
-  font-weight: bolder;
-  color: #fff;
+  font-size: 1.1em;
+  color: #8c8c8c;
 }
-
-#e-cnpj .img-product {
-  border-style: solid;
-  border-color: #e1e1e1;
-  border-width: 1px 0px 0px 1px;
-}
-
-.img-product img {
-  margin: 0px auto;
-}
-
-#e-cnpj .title-product {
-  border-style: solid;
-  border-color: #e1e1e1;
-  border-width: 1px 1px 0px 0px;
-}
-
-#e-cnpj .meses12 {
-  background-color: #dc0056;
-  border-style: solid;
-  border-color: #e1e1e1;
-  border-width: 1px 1px 0px 0px;
-}
-
-#e-cnpj .meses24 {
-  background-color: #23b24b;
-  border-style: solid;
-  border-color: #e1e1e1;
-  border-width: 1px 1px 0px 0px;
-}
-
-#e-cnpj .meses36 {
-  background-color: #2b93fe;
-  border-style: solid;
-  border-color: #e1e1e1;
-  border-width: 1px 0px 0px 0px;
-}
-
-#e-cnpj .container {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-#e-cnpj .row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-.square {
-    float:left;
-    position: relative;
-    width: 20%;
-    padding-bottom : 20%;  = width for a 1:1 aspect ratio
-    background-color:#fff;
-    overflow:hidden;
-}
-
-.content {
-    position:absolute;
-    height:100%; = 100% - 2*5% padding 
-    width:100%; = 100% - 2*5% padding 
-    padding: 5%;
-    
-}
-
-.table {
-    display:table;
-    width:100%;
-    height:100%;
-}
-
-.table-cell{
-    display:table-cell;
-    vertical-align:middle;
-}
-
-  For responsive images
-.content .rs  {
-    width:auto;
-    height:auto;
-    max-height:90%;
-    max-width:100%;
-}
-
-  For responsive images as background 
-.bg{
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover; you change this to "contain" if you don't want the images to be cropped 
-    color:#fff;
-}
-
-.img1{
-    background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
-}
-.img2{
-    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
-}
-.img3{
-    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
-}
- 
- */
-
-
 
 /* ################# Fim e-CNPJ ####################*/
 
@@ -807,6 +685,21 @@
   /* Contato
    *----------------------------------*/
 
+
+  /* e-CNPJ
+   *----------------------------------*/
+
+  .header-section .img-responsive {
+    margin: 18px 27px 18px 0px;
+  }
+
+  .accordion-section h4 {
+    padding: 0px 30px;
+  }
+
+  .panel-group {
+    padding: 0px 15px;
+  }
 }
 
 
@@ -909,9 +802,59 @@
   }
 
 
-  /* Contato
+  /* e-CNPJ
    *----------------------------------*/
+  .header-section .img-responsive {
+    margin: 32px 0px;
+  }
 
+  .table-section h3 {
+    font-size: 2.1em;
+  }
+  
+  .table-section .square .name-product > h3 + h3 {
+    font-size: 1.7em;
+  }
+  
+  .table-section h4 {
+    font-size: 1.8em;
+  }
+  
+  .table-section h5 {
+    font-size: 1.4em;
+    padding: 0px 30px;
+  }
+  
+  .table-section .row {
+    margin-top: 0px;
+  }
+  
+  .square {
+      float:left;
+      position: relative;
+      width: 20%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+      background-color:#fff;
+      overflow:hidden;
+  }
+  
+  .price {
+      width: 20%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+  }
+  
+  .no-image {
+      width: 40%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+  }
+  
+  .content {
+      position:absolute;
+      height:100%; /* = 100% - 2*5% padding */
+      width:100%; /* = 100% - 2*5% padding */
+      padding: 0%;     
+  }
+  
 
   /* Rodapé
    *----------------------------------*/
@@ -924,6 +867,7 @@
     margin: 20px 10px 100px 0px;
   }
 
+}
 
 /* Medium devices (tablets, larguras a partir de 980px) */
 @media screen and (min-width: 980px) {
@@ -962,6 +906,34 @@
 
   .credit-service-section #credit-service-group .btn {
     width: 55%;
+  }
+
+  /* e-CNPJ
+   *----------------------------------*/
+
+  .header-section .img-responsive {
+    margin: 50px 5px 50px 0px;
+  }
+
+  .table-section h3 {
+    font-size: 2.5em;
+  }
+  
+  .table-section .square .name-product > h3 + h3 {
+    font-size: 2em;
+  }
+  
+  .table-section h4 {
+    font-size: 2.2em;
+  }
+  
+  .table-section h5 {
+    font-size: 1.7em;
+    padding: 0px 35px;
+  }
+  
+  .table-section .row {
+    margin-top: 0px;
   }
 
 }
@@ -1067,7 +1039,38 @@
 
 
   /* Mapa
+  *----------------------------------*/
+
+
+
+  /* e-CNPJ
    *----------------------------------*/
+
+  .header-section .img-responsive {
+    margin: 63px 8px 63px 0px;
+  }
+
+  .table-section h3 {
+    font-size: 2.5em;
+  }
+  
+  .table-section .square .name-product > h3 + h3 {
+    font-size: 2em;
+  }
+  
+  .table-section h4 {
+    font-size: 2.2em;
+  }
+  
+  .table-section h5 {
+    font-size: 1.7em;
+    padding: 0px 50px;
+  }
+  
+  .table-section .row {
+    margin-top: 0px;
+  }
+
 
 
   /* Rodapé
