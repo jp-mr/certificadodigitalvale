@@ -399,6 +399,278 @@
   behavior: url(PIE.htc);
 }
 
+#e-cnpj h3 {
+  font-family: 'khmeruiBold';
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #8c8c8c;
+  margin-top: 0px;
+  margin-bottom: 5px
+}
+
+#e-cnpj .square .name-product > h3 + h3 {
+  font-size: 2em;
+}
+
+#e-cnpj h4,
+#e-cnpj h5 {
+  font-family: 'khmeruiBold';
+  font-weight: lighter;
+  color: #fff;
+}
+
+#e-cnpj h4 {
+  font-size: 2.5em;
+}
+
+#e-cnpj h5 {
+  font-size: 2em;
+}
+
+#e-cnpj .img-product {
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 1px;
+}
+
+.img-product img {
+  margin: 0px auto;
+}
+
+#e-cnpj .title-product {
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses12 {
+  background-color: #dc0056;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses24 {
+  background-color: #23b24b;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses36 {
+  background-color: #2b93fe;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 0px;
+}
+
+#e-cnpj .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#e-cnpj .row {
+  margin-top: 80px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#e-cnpj .first-row {
+  margin-top: 0px;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 50%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+    background-color:#fff;
+    overflow:hidden;
+}
+
+.price {
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+}
+
+.content {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+
+.table {
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+/*  For responsive images */
+.content .rs  {
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+
+/*  For responsive images as background */
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.img1{
+    background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
+}
+.img2{
+    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
+}
+.img3{
+    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
+}
+
+
+
+/*
+ * TABLET E DESKTOP
+ *
+ *
+
+ #e-cnpj h3 {
+  font-family: 'khmeruiBold';
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #8c8c8c;
+  margin-top: 0px;
+  margin-bottom: 5px
+}
+
+#e-cnpj .square .name-product > h3 + h3 {
+  font-size: 2em;
+}
+
+#e-cnpj h4,
+#e-cnpj h5 {
+  font-family: 'khmerui';
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #fff;
+}
+
+#e-cnpj .img-product {
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 1px;
+}
+
+.img-product img {
+  margin: 0px auto;
+}
+
+#e-cnpj .title-product {
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses12 {
+  background-color: #dc0056;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses24 {
+  background-color: #23b24b;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 1px 0px 0px;
+}
+
+#e-cnpj .meses36 {
+  background-color: #2b93fe;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 0px;
+}
+
+#e-cnpj .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#e-cnpj .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 20%;  = width for a 1:1 aspect ratio
+    background-color:#fff;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:100%; = 100% - 2*5% padding 
+    width:100%; = 100% - 2*5% padding 
+    padding: 5%;
+    
+}
+
+.table {
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+  For responsive images
+.content .rs  {
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+
+  For responsive images as background 
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; you change this to "contain" if you don't want the images to be cropped 
+    color:#fff;
+}
+
+.img1{
+    background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
+}
+.img2{
+    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
+}
+.img3{
+    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
+}
+ 
+ */
+
+
+
 /* ################# Fim e-CNPJ ####################*/
 
 
