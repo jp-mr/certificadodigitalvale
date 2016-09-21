@@ -376,7 +376,8 @@
 /* ################# Fim HOME ######################*/
 
 
-/* ################# e-CNPJ ########################*/
+
+/* ################# e-CNPJ | e-CPF | NF-e ########################*/
 
 .header-section .container {
   padding-left: 0px;
@@ -385,18 +386,6 @@
 
 .header-section .img-responsive {
   margin: 18px 0px 18px 0px;
-}
-
-.ecnpj-banner {
-  text-align: center;
-  background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
-  -pie-background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-  behavior: url(PIE.htc);
 }
 
 .table-section h3 {
@@ -408,7 +397,8 @@
   margin-bottom: 5px
 }
 
-.table-section .square .name-product > h3 + h3 {
+.table-section .square .name-product > h3 + h3,
+.table-section .square-nfe .name-product > h3 + h3 {
   font-size: 2em;
 }
 
@@ -464,7 +454,8 @@
   border-width: 1px 0px 0px 0px;
 }
 
-.table-section .no-image {
+.table-section .no-image,
+.table-section .no-image-nfe {
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 0px 0px 1px;
@@ -527,7 +518,6 @@
     vertical-align:middle;
 }
 
-
 .accordion-section h4 {
   font-family: 'khmeruiBold';
   font-weight: lighter;
@@ -549,7 +539,90 @@
   color: #8c8c8c;
 }
 
-/* ################# Fim e-CNPJ ####################*/
+/* ################# Fim e-CNPJ | e-CPF | NF-e ####################*/
+
+
+/* e-CNPJ
+ * -------------------------------------------------*/
+
+.ecnpj-banner {
+  text-align: center;
+  background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/ecnpj-banner.jpg) no-repeat center center scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  behavior: url(PIE.htc);
+}
+
+/* e-CPF
+ * -------------------------------------------------*/
+
+.ecpf-banner {
+  text-align: center;
+  background: url(../img/ecpf-banner.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/ecpf-banner.jpg) no-repeat center center scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  behavior: url(PIE.htc);
+}
+
+/* NF-e
+ * -------------------------------------------------*/
+
+.nfe-banner {
+  text-align: center;
+  background: url(../img/nfe-banner.jpg) no-repeat center center scroll;
+  -pie-background: url(../img/nfe-banner.jpg) no-repeat center center scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  behavior: url(PIE.htc);
+}
+
+.table-section .meses12-nfe {
+  background-color: #dc0056;
+  border-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1px 0px 0px 0px;
+}
+
+.table-section .no-border-nfe {
+  border-width: 0px 0px 0px 0px;
+}
+
+.square-nfe {
+    float:left;
+    position: relative;
+    width: 50%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+    background-color:#fff;
+    overflow:hidden;
+}
+
+.price-nfe {
+    width: 100%;
+    padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
+}
+
+.no-image-nfe {
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+}
+
+.content-nfe {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    padding: 0%;
+}
 
 
 /* Rodapé
@@ -686,7 +759,7 @@
    *----------------------------------*/
 
 
-  /* e-CNPJ
+  /* e-CNPJ | e-CPF | NF-e
    *----------------------------------*/
 
   .header-section .img-responsive {
@@ -700,6 +773,30 @@
   .panel-group {
     padding: 0px 15px;
   }
+
+  /* NF-e
+   *----------------------------------*/
+
+  .square-nfe {
+      float:left;
+      position: relative;
+      width: 50%;
+      padding-bottom : 35%; /* = width for a 1:1 aspect ratio */
+      background-color:#fff;
+      overflow:hidden;
+  }
+  
+  .price-nfe {
+      width: 50%;
+      padding-bottom : 35%; /* = width for a 1:1 aspect ratio */
+  }
+  
+  .no-image-nfe {
+      width: 100%;
+      padding-bottom : 35%; /* = width for a 1:1 aspect ratio */
+  }
+  
+
 }
 
 
@@ -802,7 +899,7 @@
   }
 
 
-  /* e-CNPJ
+  /* e-CNPJ | e-CPF | NF-e
    *----------------------------------*/
   .header-section .img-responsive {
     margin: 32px 0px;
@@ -812,7 +909,8 @@
     font-size: 2.1em;
   }
   
-  .table-section .square .name-product > h3 + h3 {
+  .table-section .square .name-product > h3 + h3,
+  .table-section .square-nfe .name-product > h3 + h3 {
     font-size: 1.7em;
   }
   
@@ -830,12 +928,12 @@
   }
   
   .square {
-      float:left;
-      position: relative;
-      width: 20%;
-      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
-      background-color:#fff;
-      overflow:hidden;
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+    background-color:#fff;
+    overflow:hidden;
   }
   
   .price {
@@ -854,7 +952,50 @@
       width:100%; /* = 100% - 2*5% padding */
       padding: 0%;     
   }
+
+
+  /* NF-e
+   *----------------------------------*/
+
+  .square-nfe {
+      float:left;
+      position: relative;
+      width: 25%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+      background-color:#fff;
+      overflow:hidden;
+  }
   
+  .price-nfe {
+      width: 25%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+  }
+  
+  .no-image-nfe {
+      width: 50%;
+      padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+  }
+  
+  .content-nfe {
+      position:absolute;
+      height:100%; /* = 100% - 2*5% padding */
+      width:100%; /* = 100% - 2*5% padding */
+      padding: 0%;     
+  }
+  
+
+  /* Rodapé
+   *----------------------------------*/
+
+  .footer-section .img-footer {
+    margin: 20px 0px 100px 0px;
+  }
+  
+  .footer-section p {
+    margin: 20px 10px 100px 0px;
+  }
+
+
 
   /* Rodapé
    *----------------------------------*/
@@ -908,7 +1049,7 @@
     width: 55%;
   }
 
-  /* e-CNPJ
+  /* e-CNPJ | e-CPF | NF-e
    *----------------------------------*/
 
   .header-section .img-responsive {
@@ -919,7 +1060,8 @@
     font-size: 2.5em;
   }
   
-  .table-section .square .name-product > h3 + h3 {
+  .table-section .square .name-product > h3 + h3,
+  .table-section .square-nfe .name-product > h3 + h3 {
     font-size: 2em;
   }
   
@@ -1043,7 +1185,7 @@
 
 
 
-  /* e-CNPJ
+  /* e-CNPJ | e-CPF | NF-e
    *----------------------------------*/
 
   .header-section .img-responsive {
@@ -1054,7 +1196,8 @@
     font-size: 2.5em;
   }
   
-  .table-section .square .name-product > h3 + h3 {
+  .table-section .square .name-product > h3 + h3,
+  .table-section .square-nfe .name-product > h3 + h3 {
     font-size: 2em;
   }
   
