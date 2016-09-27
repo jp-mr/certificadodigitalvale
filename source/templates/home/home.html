@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% extends 'forms.html' %}
 {% load staticfiles %}
 
 {% block content %}
@@ -28,8 +27,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-0">
-              <p class="config-CertDigit"><small>Verifique se o computador no qual você utilizará o 
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0">
+              <p><small>Verifique se o computador no qual você utilizará o 
               certificado digital possui os requisitos técnicos para a correta 
               utililzação. <a href="" data-toggle="modal" data-target="#modalRequisitos"> CLIQUE AQUI.</a></small></p>
             </div>
@@ -194,20 +193,18 @@
 
 
     <!-- Location Section -->
-    <section id="location" class="map">
+    <section class="map">
       <div class="container">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-itema" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.70766599034!2d-45.46323628503398!3d-22.924150985003013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf03b727f6c43%3A0xa149ce0ff1997cc2!2sAv.+Cel.+Fernando+Prestes%2C+60+-+Centro%2C+Pindamonhangaba+-+SP%2C+12400-240!5e0!3m2!1spt-BR!2sbr!4v1471639652380" width="800" height="500" allowfullscreen></iframe>
+          <iframe id="mapa" class="embed-responsive-itema" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.70766599034!2d-45.46323628503398!3d-22.924150985003013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf03b727f6c43%3A0xa149ce0ff1997cc2!2sAv.+Cel.+Fernando+Prestes%2C+60+-+Centro%2C+Pindamonhangaba+-+SP%2C+12400-240!5e0!3m2!1spt-BR!2sbr!4v1471639652380" width="800" height="500" allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      {% block form %}
-
-      {% endblock%}
+    <section id="contato" class="contact-section">
+      {% include 'forms.html' %}
     </section>
 
 {% endblock%}

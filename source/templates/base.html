@@ -13,7 +13,7 @@
 
     <title>Certificado Digital Vale</title>
 
-    <link rel="bookmark" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="icon" href="{% static 'img/favicon.ico' %}"/>
 
     <!-- Bootstrap Core CSS 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -93,20 +93,20 @@
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">E-CNPJ</a></li>
-                    <li id="borda"><a href="#">E-CPF</a></li>
-                    <li id="borda"><a href="#">NF-E</a></li>
+                    <li><a href="{% url 'core:ecnpj' %}">E-CNPJ</a></li>
+                    <li id="borda"><a href="{% url 'core:ecpf' %}">E-CPF</a></li>
+                    <li id="borda"><a href="{% url 'core:nfe' %}">NF-E</a></li>
                   </ul>
                 </div>
               </li>
               <li>
-                  <a class="" href="#">CREDIT SERVICE</a>
+                  <a class="" href="{% url 'core:home' %}#credit-service">CREDIT SERVICE</a>
               </li>
               <li>
-                  <a class="" href="#">MAPA</a>
+                  <a class="" href="{% url 'core:home' %}#mapa">MAPA</a>
               </li>
               <li>
-                  <a class="" href="#">CONTATO</a>
+                <a class="" href="{% url 'core:home' %}#contato">CONTATO</a>
               </li>
             </ul>
           </div>
@@ -118,6 +118,27 @@
     {% block content %} 
     
     {% endblock %}
+
+    <!-- modalEmailSent -->
+    {% if message_sent %}
+      <div class="modal fade bs-example-modal-sm" 
+           id="modalEmailSent" 
+           tabindex="-1" 
+           role="dialog" 
+           aria-labelledby="modalEmailSent">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+							<i class="fa fa-spinner fa-pulse"></i>
+              <p class="modal-title" id="modalMessage">Mensagem foi
+              enviada com sucesso.</p>       
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <!-- Fim modalEmailSent -->
+
 
     <!-- Footer Section -->
     <section id="footer" class="footer-section">
@@ -159,14 +180,28 @@
     <!-- Disable Google Maps scrolling -->
     <script src="{% static 'js/map.js' %}"></script>
 
-    <!-- Google Analytics -->
     <script>
+
+      {% if message_sent %}
+      $(document).ready(function(){
+        //Gatilho do modal de confirmação do envio de email
+        $('#modalEmailSent').modal('show');
+        $('#modalEmailSent').on('shown.bs.modal', function(e){
+          setTimeout(function(){
+						$('#modalEmailSent').modal('hide'); }, 3000
+          );
+        });
+      });
+      {% endif %}
+
+      //Google Analytics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-83136272-1', 'auto');
       ga('send', 'pageview');
+
     </script>
 
   </body>

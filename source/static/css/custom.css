@@ -355,7 +355,7 @@
  *--------------------------------------------------*/
 
 .map {
-  padding-top:97px;
+  margin-bottom: 20px;
 }
 
 .map iframe {
@@ -371,7 +371,45 @@
 /* Contato
  *--------------------------------------------------*/
 
+.contact-section {
+  margin-bottom: 100px;
+}
 
+.contact-section h1 {
+  font-family: 'kartika';
+  font-size: 2.5em;
+  color: #8c8c8c;
+}
+
+.contact-section form label {
+  font-family: 'kartika';
+  font-weight: lighter;
+  font-size: 1.1em;
+  color: #8c8c8c;
+}
+
+.contact-section form button {
+  font-family: 'kartika';
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff;
+  width: 50%;
+}
+
+.modal {
+  top: 20%;
+}
+
+.modal-header i {
+	font-size: 20px;
+	float: right;
+}
+
+.modal-header p {
+  font-family: 'khmerui';
+  font-size: 1.1em;
+	margin-bottom: 12px;
+}
 
 /* ################# Fim HOME ######################*/
 
@@ -644,6 +682,7 @@
 }
 
 .footer-section p {
+  font-size: 1.1em;
   text-align: right;
   margin: 20px 0px 70px 0px;
   color: #5b5b5b
@@ -796,7 +835,6 @@
       padding-bottom : 35%; /* = width for a 1:1 aspect ratio */
   }
   
-
 }
 
 
@@ -862,10 +900,6 @@
     font-size: 4.5em;
   }
 
-  .intro-section .config-CertDigit {
-    padding-right: 127px;
-  }
-
 
   /* Certificação Digital
    *----------------------------------*/
@@ -896,6 +930,16 @@
 
   .credit-service-section #credit-service-group .btn {
     width: 75%;
+  }
+
+
+  /* Contact
+   *----------------------------------*/
+
+  .contact-section form button {
+    width: 30%;
+    float: right !important;
+    margin-right:15px;
   }
 
 
@@ -1049,6 +1093,14 @@
     width: 55%;
   }
 
+  /* Contact
+   *----------------------------------*/
+
+  .contact-section form button {
+    width: 22%;
+  }
+
+
   /* e-CNPJ | e-CPF | NF-e
    *----------------------------------*/
 
@@ -1182,6 +1234,7 @@
 
   /* Mapa
   *----------------------------------*/
+
 
 
 
