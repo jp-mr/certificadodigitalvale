@@ -222,24 +222,24 @@
   margin-bottom: 10px;
 }
 
-.modal {
+.modal-requisitos .modal {
   font-family: 'khmerui';
   top: 10%;
 }
 
-.modal-header {
+.modal-requisitos .modal-header {
   padding: 15px 15px 5px 15px;
 }
 
-.modal-body {
+.modal-requisitos .modal-body {
   padding: 5px 15px 5px 15px;
 }
 
-.modal-body ul {
+.modal-requisitos .modal-body ul {
   padding-left: 13px;
 }
 
-.modal-header hr {
+.modal-requisitos .modal-header hr {
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -396,19 +396,19 @@
   width: 50%;
 }
 
-.modal {
+.contact-modal .modal {
   top: 20%;
 }
 
-.modal-header i {
+.contact-modal .modal-header i {
 	font-size: 20px;
 	float: right;
 }
 
-.modal-header p {
+.contact-modal .modal-header p {
   font-family: 'khmerui';
   font-size: 1.1em;
-	margin-bottom: 12px;
+	margin-bottom: 1px;
 }
 
 /* ################# Fim HOME ######################*/

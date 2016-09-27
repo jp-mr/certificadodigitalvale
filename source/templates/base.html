@@ -76,7 +76,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'core:home' %}">
               <img class="img-responsive" src="{% static 'img/logo_lg.png' %}"></img>
             </a>      
           </div>
@@ -121,6 +121,7 @@
 
     <!-- modalEmailSent -->
     {% if message_sent %}
+    <div class="contact-modal">
       <div class="modal fade bs-example-modal-sm" 
            id="modalEmailSent" 
            tabindex="-1" 
@@ -130,15 +131,16 @@
           <div class="modal-content">
             <div class="modal-header">
 							<i class="fa fa-spinner fa-pulse"></i>
-              <p class="modal-title" id="modalMessage">Mensagem foi
-              enviada com sucesso.</p>       
+              <p class="modal-title" id="modalMessage">Mensagem enviada com sucesso.</p>       
             </div>
           </div>
         </div>
       </div>
+    </div>
     {% endif %}
     <!-- Fim modalEmailSent -->
 
+    {% include 'service-credit-modal/modal_consulta.html'%}
 
     <!-- Footer Section -->
     <section id="footer" class="footer-section">
@@ -146,7 +148,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <div class="img-footer">
-              <a href="#">
+              <a href="{% url 'core:home' %}">
                 <img class="img-responsive" src="{% static 'img/logo_lg.png' %}"></img>
               </a>
             </div>

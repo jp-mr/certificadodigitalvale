@@ -40,28 +40,29 @@
 
     
 		<!-- modalRequisitos -->
-		<div class="modal fade" id="modalRequisitos" tabindex="-1" role="dialog" aria-labelledby="requisitos">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h4 class="modal-title" id="requisitos">Requisitos técnicos para utilização</h4>
-            <hr></hr>
-          </div>
-				  <div class="modal-body">
-            <ul>
-              <li>Sistema operacional: Windows XP SP3, Vista e 7</li>
-              <li> Navegador: Internet Explorer 6.0, 7.0, 8.0 e 9.0</li>
-              <li>Micro ou notebook com porta USB habilitada e acesso a internet</li>
-              <li>Verificar com o administrador de rede se o perfil de usuário permite a instalação da leitora e o uso de seu certificado digital.</li>
-            </ul>
-					</div>
-				</div>
+    <div class="modal-requisitos">
+		  <div class="modal fade" id="modalRequisitos" tabindex="-1" role="dialog" aria-labelledby="requisitos">
+		  	<div class="modal-dialog" role="document">
+		  		<div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="requisitos">Requisitos técnicos para utilização</h4>
+              <hr></hr>
+            </div>
+		  		  <div class="modal-body">
+              <ul>
+                <li>Sistema operacional: Windows XP SP3, Vista e 7</li>
+                <li> Navegador: Internet Explorer 6.0, 7.0, 8.0 e 9.0</li>
+                <li>Micro ou notebook com porta USB habilitada e acesso a internet</li>
+                <li>Verificar com o administrador de rede se o perfil de usuário permite a instalação da leitora e o uso de seu certificado digital.</li>
+              </ul>
+		  			</div>
+		  		</div>
+        </div>
       </div>
     </div>
-
 
     <!-- Certificação Digital Section -->
     <section id="cert-digit" class="cert-digit-section">
@@ -78,7 +79,7 @@
                integridade das informações. Está vinculado à Receita Federal e, 
                por isso, deve ser emitido para o representante legal cadastrado 
                neste órgão.</p>
-               <button type="button" class="btn btn-primary btn-block">SAIBA MAIS</button>
+               <a class="btn btn-primary btn-block" href="{% url 'core:ecnpj' %}">SAIBA MAIS</a>
              </div>
             </div>
           </div>
@@ -92,7 +93,7 @@
                Pessoa Física com validade jurídica pela internet. Também é possível 
                transmitir demonstrativos para a Receita Federal e efetuar outros 
                serviços em nome de uma empresa caso você a represente.</p>
-               <button type="button" class="btn btn-primary btn-block">SAIBA MAIS</button>
+               <a class="btn btn-primary btn-block" href="{% url 'core:ecpf' %}">SAIBA MAIS</a>
              </div>
             </div>
           </div>
@@ -107,14 +108,13 @@
                A Nota Fiscal Eletrônica já é uma realidade na legislação brasileira 
                desde outubro de 2005.<br/>Hoje, ela é utilizada por empresas de diversos 
                segmentos e portes, sendo assinada com certificados digitais.</p>
-               <button type="button" class="btn btn-primary btn-block">SAIBA MAIS</button>
+               <a class="btn btn-primary btn-block" href="{% url 'core:nfe' %}">SAIBA MAIS</a>
              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- Credit Service Section -->
     <section id="credit-service" class="credit-service-section">
@@ -133,7 +133,7 @@
                <h3>Acesso rápido e fácil às informações de clientes e empresas.</h3>
                <p>Acesso ao maior banco de dados da América Latina. Consultas ao CPF 
                ou CNPJ dos seus clientes, parceiros e fornecedores.</p>
-               <button type="button" class="btn btn-primary btn-block">SAIBA MAIS</button>
+               <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#consulta">SAIBA MAIS</button>
              </div>
             </div>
           </div>
