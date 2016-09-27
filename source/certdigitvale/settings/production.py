@@ -1,6 +1,9 @@
 from django.conf import settings
 
+from certdigitvale.keywords import keys
+
 import os
+
 
 if 'OPENSHIFT_REPO_DIR' in os.environ:
 
@@ -21,16 +24,15 @@ if 'OPENSHIFT_REPO_DIR' in os.environ:
         }
     }
 
+    KW = keys()
+
     ## Definições para email    
     EMAIL_HOST = 'smtp.mailgun.org'
     EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'postmaster@sandbox9db2e2b439b9427691c56627c732d4f9.mailgun.org'
-    EMAIL_HOST_PASSWORD = '6105567ad1c5d6ba793664903dbc7f39'
+    EMAIL_HOST_USER = KW[1]
+    EMAIL_HOST_PASSWORD = KW[2]
     EMAIL_USE_TLS = True
     EMAIL_DESTINY = False
-
-
-
 
     STATIC_ROOT = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'static')
 
