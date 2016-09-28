@@ -55,7 +55,7 @@
 
 
 @font-face {
-  font-family: kartikaBold;
+  font-family: 'kartikaBold';
   src: local("../fontes/KARTIKAB.TTF"), url("../fontes/KARTIKAB.TTF"); /* TTF file for CSS3 browsers
   font-weight: normal;
   font-style: normal;
@@ -348,9 +348,42 @@
   font-weight: bold;
 }
 
+.modal-style .modal-content h4 {
+  font-family: 'khmeruiBold';
+  font-weight: bolder;
+  font-size: 2em;
+  color: #8c8c8c;
+}
 
+.modal-style .modal-content h6,
+.modal-style .modal-content li,
+.modal-style .modal-content p {
+  font-family: 'khmerui';
+  color: #8c8c8c;
+  font-size: 1.2em;
+}
 
+.modal-style .modal-content h6 {
+  font-family: 'khmeruiBold';
+  font-weight: lighter;
+  color: #8c8c8c;
+  font-size: 1.3em;
+}
 
+.modal-style .modal-content .modal-body .h4-body {
+  margin: 15px 0px;
+}
+
+.modal-style .modal-content .modal-body .hr-last {
+  margin-bottom: 0px;
+}
+
+.modal-style .modal-footer button {
+  font-family: 'kartika';
+  font-weight: bold;
+  font-size: 1em;
+}
+ 
 /* Mapa
  *--------------------------------------------------*/
 
