@@ -532,9 +532,9 @@
   border-width: 1px 0px 0px 1px;
 }
 
-.table-section .last {
-  border-bottom: 1px solid #e1e1e1;
-}
+/*.table-section .last-row {
+  border-bottom: 1px solid #e1e1e1!important;
+}*/
 
 .table-section .container {
   padding-left: 0px;
@@ -658,15 +658,19 @@
   behavior: url(PIE.htc);
 }
 
-.table-section .meses12-nfe {
-  background-color: #dc0056;
+.table-section .meses12-nfe,
+.table-section .meses24-nfe {
   border-style: solid;
   border-color: #e1e1e1;
   border-width: 1px 0px 0px 0px;
 }
 
-.table-section .no-border-nfe {
-  border-width: 0px 0px 0px 0px;
+.table-section .meses12-nfe {
+  background-color: #dc0056;
+}
+
+.table-section .meses24-nfe {
+  background-color: #23b24b;
 }
 
 .square-nfe {
@@ -760,6 +764,13 @@
 /* Small devices (tablets, larguras até 600px) */
 @media screen and (max-width: 600px) {
 
+  /* e-CNPJ | e-CPF | NF-e
+   *----------------------------------*/
+
+  .table-section .hide-block { 
+    display: none;
+  }
+
 
   /* Mapa
    *----------------------------------*/
@@ -768,11 +779,14 @@
 }
 
 
-/* Small devices (tablets, larguras até 980px) */
-@media screen and (max-width: 980px) {
+/* Small devices (tablets, larguras até 766px) */
+@media screen and (max-width: 766px) {
 
-  /* Mapa
+  /* NF-e
    *----------------------------------*/
+  .table-section .no-border-nfe {
+    border-width: 0px 0px 0px 0px;
+}
 
 
 }
@@ -1003,7 +1017,11 @@
   .table-section .row {
     margin-top: 0px;
   }
-  
+ 
+  .table-section .last-row {
+    border-bottom: 1px solid #e1e1e1!important;
+  }
+
   .square {
     float:left;
     position: relative;

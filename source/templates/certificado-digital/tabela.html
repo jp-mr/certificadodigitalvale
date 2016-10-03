@@ -1,0 +1,188 @@
+    <!-- Table Section -->
+    <section id="{{ certificado }}" class="table-section">
+      <div class="container">
+    {% if not tabela_nfe %}    
+      {% for modelo in produtos %}
+        {% if modelo.img_produto %}
+        <div class="row {{ modelo.first_row }}">
+          <div class="square {{ modelo.img_produto }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell">
+                  <img class="img-responsive" src="{{ modelo.imagem.url }}"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square title-product {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell">
+                  <div class="name-product">
+                    <h3>{{ modelo.certificado }}</h3>
+                    <h3>{{ modelo.modelo }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses12 {{ modelo.vermelho_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">
+                  <h5>{{ modelo.bloco_vermelho_validade }}</h5>
+                  <h4>{{ modelo.bloco_vermelho_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses24 {{ modelo.verde_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.bloco_verde_validade }}</h5>
+                  <h4>{{ modelo.bloco_verde_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses36 {{ modelo.azul_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.bloco_azul_validade }}</h5>
+                  <h4>{{ modelo.bloco_azul_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="row">
+          <div class="square no-image title-product {{ modelo.last_row}}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell">
+                  <div class="name-product text-center">
+                    <h3>{{ modelo.certificado }}</h3>
+                    <h3>{{ modelo.modelo }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses12 {{ modelo.vermelho_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">
+                  <h5>{{ modelo.bloco_vermelho_validade }}</h5>
+                  <h4>{{ modelo.bloco_vermelho_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses24 {{ modelo.verde_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.bloco_verde_validade }}</h5>
+                  <h4>{{ modelo.bloco_verde_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square price meses36 {{ modelo.azul_vazio }} {{ modelo.last_row }}">
+            <div class="content">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.bloco_azul_validade }}</h5>
+                  <h4>{{ modelo.bloco_azul_preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% for modelo in produtos %}
+        {% if modelo.img_produto %}
+        <div class="row {{ modelo.first_row }}">
+          <div class="square-nfe {{ modelo.img_produto }} {{ modelo.last_row }}">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell">
+                  <img class="img-responsive" src="{{ modelo.imagem.url }}"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square-nfe title-product {{ modelo.last_row }}">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell">
+                  <div class="name-product">
+                    <h3>{{ modelo.certificado }}</h3>
+                    <h3>{{ modelo.modelo }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square-nfe price-nfe {{ modelo.cor_bloco }} {{ modelo.last_row }} no-border-nfe">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.validade }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square-nfe price-nfe {{modelo.cor_bloco }} {{ modelo.last_row }} no-border-nfe">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h4>{{ modelo.preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="row">
+          <div class="square-nfe no-image-nfe {{ modelo.last_row }} title-product">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell">
+                  <div class="name-product text-center">
+                    <h3>{{ modelo.certificado }}</h3>
+                    <h3>{{ modelo.modelo }}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square-nfe price-nfe {{ modelo.last_row }} {{ modelo.cor_bloco }} no-border-nfe">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h5>{{ modelo.validade }}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square-nfe price-nfe {{ modelo.last_row }} {{modelo.cor_bloco }} no-border-nfe">
+            <div class="content-nfe">
+              <div class="table">
+                <div class="table-cell text-center">               
+                  <h4>{{ modelo.preço }}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+      </div>
+    </section>

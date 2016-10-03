@@ -2,19 +2,54 @@ from django.db import models
 from django.conf import settings
 
 def upload_location(instance, filename):
-    return '%s/produtos/%s' % (settings.MEDIA_ROOT, filename)
+    return 'produtos/%s/%s' % (instance, filename)
 
 class Produto(models.Model):
     imagem = models.ImageField(upload_to=upload_location, blank=True, null=True)
-    certificado = models.CharField(max_length=80)
     modelo = models.CharField(max_length=80)
-    bloco_vemelho_validade = models.CharField(max_length=80, blank=True)
+    bloco_vermelho_validade = models.CharField(max_length=80, blank=True)
     bloco_vermelho_preço = models.CharField(max_length=80, blank=True)
     bloco_verde_validade = models.CharField(max_length=80, blank=True)
     bloco_verde_preço = models.CharField(max_length=80, blank=True)
     bloco_azul_validade = models.CharField(max_length=80, blank=True)
     bloco_azul_preço = models.CharField(max_length=80, blank=True)
+    posição = models.PositiveSmallIntegerField(unique=True)
+
+    class Meta:
+        abstract = True
+
+
+class Ecnpj(Produto):
+
+    certificado = "e-CNPJ"
+
+    class Meta:
+        verbose_name_plural = "e-CNPJ"
+        ordering = ['posição']
 
     def __str__(self):
         return self.certificado
 
+
+class Ecpf(Produto):
+
+    certificado = "e-CPF"
+
+    class Meta:
+        verbose_name_plural = "e-CPF"
+        ordering = ['posição']
+
+    def __str__(self):
+        return self.certificado
+
+
+class NFe(Produto):
+
+    certificado = "PJ NF-e"
+
+    class Meta:
+        verbose_name_plural = "NF-e"
+        ordering = ['posição']
+
+    def __str__(self):
+        return self.certificado
