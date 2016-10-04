@@ -187,6 +187,7 @@ def ecnpj(request):
     context = {
             'produtos': produtos,
             'certificado': 'e-cnpj',
+            'saiba_mais_produto': 'e-CNPJ',
             'Infos': infos,
             }
 
@@ -203,6 +204,7 @@ def ecpf(request):
     context = {
             'produtos': produtos,
             'certificado': 'e-cpf',
+            'saiba_mais_produto': 'e-CPF',
             'Infos': infos,
             }
 
@@ -219,6 +221,7 @@ def nfe(request):
     context = {
             'produtos': produtos,
             'certificado': 'nf-e',
+            'saiba_mais_produto': 'NF-e',
             'tabela_nfe': tabela_nfe,
             'Infos': infos,
             }
