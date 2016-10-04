@@ -1,6 +1,6 @@
 {% load crispy_forms_tags %}
 
-{% block forms%}
+{% block forms %}
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center">
@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
             <form method="POST" action=''>{% csrf_token %}
-              {{ form|crispy }}
+              {{ form | crispy }}
               <div class="row text-center">
                 <button type="submit" 
                         class="btn btn-primary">

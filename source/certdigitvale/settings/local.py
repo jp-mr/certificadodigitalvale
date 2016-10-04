@@ -9,8 +9,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #third party apps
     'crispy_forms',
+    'markdown_deux',
+    'pagedown',
+
     #project apps
     'core',
+    'info',
+    'tabela',
 ]
 
 #DATABASES = {
