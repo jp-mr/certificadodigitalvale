@@ -198,7 +198,7 @@ def ecpf(request):
 
     produtos = table(TabelaEcpf)
 
-    infos = InfoEcnpj.objects.all()
+    infos = InfoEcpf.objects.all()
 
     template = 'certificado-digital/e-cpf.html'
     context = {
@@ -215,7 +215,7 @@ def nfe(request):
 
     produtos, tabela_nfe = table(TabelaNFe)
 
-    infos = InfoEcnpj.objects.all()
+    infos = InfoNFe.objects.all()
 
     template = 'certificado-digital/nf-e.html'
     context = {

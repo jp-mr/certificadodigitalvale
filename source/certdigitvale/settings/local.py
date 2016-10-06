@@ -14,6 +14,7 @@ INSTALLED_APPS = [
 
     #project apps
     'core',
+    'cs_modal',
     'info',
     'tabela',
 ]

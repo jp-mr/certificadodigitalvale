@@ -604,11 +604,18 @@
   color: #8c8c8c;
 }
 
+.panel-group-lists .panel-body h1,
+.panel-group-lists .panel-body h2 {
+  font-size: 1.2em;
+}
+
 .panel-body {
   font-family: 'khmerui';
   font-size: 1.1em;
   color: #8c8c8c;
 }
+
+
 
 /* ################# Fim e-CNPJ | e-CPF | NF-e ####################*/
 

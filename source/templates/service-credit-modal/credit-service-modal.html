@@ -1,0 +1,27 @@
+{% for modal in cs_modals %}
+<!-- Modal -->
+<div class="modal fade modal-style" 
+  id="{{ modal.name_id }}" analise
+     tabindex="-1" 
+     role="dialog" 
+     aria-labelledby="consultaLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="consultaLabel">
+          {{ modal.título }} AQUISIÇÃO E CONCESSÃO DE CRÉDITO
+        </h4>
+      </div>
+      <div class="modal-body">
+        {{ markdown.content }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">FECHAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

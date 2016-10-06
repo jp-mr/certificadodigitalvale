@@ -8,6 +8,7 @@ class ProdutoModelAdmin(admin.ModelAdmin):
     list_display = ['modelo', 'posição']
     # list_filter = ['modelo']
     # search_fields = ['modelo']
+    actions = ['delete_selected']
 
 
 class EcnpjModelAdmin(ProdutoModelAdmin):
