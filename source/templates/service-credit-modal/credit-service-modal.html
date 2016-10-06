@@ -1,7 +1,7 @@
 {% for modal in cs_modals %}
 <!-- Modal -->
 <div class="modal fade modal-style" 
-  id="{{ modal.name_id }}" analise
+  id="{{ modal.name_id }}"
      tabindex="-1" 
      role="dialog" 
      aria-labelledby="consultaLabel">
@@ -12,11 +12,13 @@
           <span aria-hidden="true">&times;</span>
         </button>
         <h4 class="modal-title" id="consultaLabel">
-          {{ modal.título }} AQUISIÇÃO E CONCESSÃO DE CRÉDITO
+          {{ modal.título }}
         </h4>
       </div>
       <div class="modal-body">
-        {{ markdown.content }}
+        <p class="content-markdown">
+          {{ modal.get_markdown }}
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">FECHAR</button>
