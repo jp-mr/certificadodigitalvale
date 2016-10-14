@@ -1,7 +1,4 @@
 from django import forms
-# from pagedown.widgets import AdminPagedownWidget
-
-# from .models import InfoCNPJ
 
 
 class ContactForm(forms.Form):
@@ -17,11 +14,3 @@ class ContactForm(forms.Form):
     mensagem = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder': 'Digite o assunto da mensagem'
     }))
-
-
-# class InfoCNPJForm(forms.ModelForm):
-#     descrição = forms.CharField(widget=AdminPagedownWidget())
-
-#     class Meta:
-#         model = InfoCNPJ
-#         fields = "__all__"

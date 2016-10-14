@@ -59,6 +59,7 @@ def home(request):
     context = {
         'form': form,
         'cs_modals': cs_modals,
+        'home':'home'
     }
 
     msg_sent = request.GET.get('sent', False)

@@ -18,5 +18,4 @@ class CreditServiceModalAdmin(admin.ModelAdmin):
         return False
 
 
-
 admin.site.register(CreditServiceModal, CreditServiceModalAdmin)

@@ -2,13 +2,13 @@ def table(model_class):
 
     produtos = list(model_class.objects.all())
 
-    # CSS para a primeira e a última linha
+    # CSS para a primeira e a última linha da tabela
     if produtos:
         produtos[0].first_row = 'first-row'
         produtos[-1].last_row = 'last-row'
 
-    # Verifica se há imagem e passa um valor para usar um atributo CSS
-    # do contrário, centraliza o texto em dois blocos brancos'
+    # Verifica se há uma imagem e passa um valor para usar um atributo CSS
+    # do contrário, centraliza o texto em dois blocos brancos
     # Verifica os blocos vazios e passa um valor para usar a propriedade CSS
     # "display:none", usado em larguras <= 600px
     for modelos in produtos:
@@ -25,9 +25,9 @@ def table(model_class):
     # estrutura de tabela utitlizar
     if model_class.certificado == 'PJ NF-e':
 
-        # recebe por meio do método .append os valor 1 ou 0
+        # recebe por meio do método .append os valor 0 ou 1
+        # 0 se somente um bloco estiver preenchido
         # 1 se mais de um bloco estiver preenchido
-        # 0 se 1 bloco estiver preenchido
         lista_verificacao = []
 
         # itera por cada modelo (cada linha da tabela) 
@@ -82,7 +82,8 @@ def table(model_class):
                 # propriedade CSS adequada e passar valores no template
                 # Os atributos 'validade' e 'preço' só são usados no bloco de
                 # código da tabela que implementa um bloco colorido por linha
-                # É dessa forma que é filtrado qual bloco deve ser exibido
+                # É dessa forma que é filtrado qual cor de bloco deve ser
+                # exibido
                 if attr_blocos[0] > 0:
                     modelos.validade = modelos.bloco_vermelho_validade
                     modelos.preço = modelos.bloco_vermelho_preço
@@ -98,7 +99,7 @@ def table(model_class):
             else:
                 lista_verificacao.append(1)
 
-        # Se ao final da iteração por todos os modelos (linha da tabela), o
+        # Se ao final da iteração por todos os modelos (linhas da tabela), o
         # valor da soma da lista verificação for zero, isso indica que somente
         # um bloco de cada linha está preenchido
         if sum(lista_verificacao) == 0:
@@ -109,4 +110,3 @@ def table(model_class):
         return produtos, tabela_nfe
 
     return produtos
-

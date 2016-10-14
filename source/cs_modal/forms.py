@@ -10,4 +10,9 @@ class CreditServiceModalForm(forms.ModelForm):
 
     class Meta:
         model = CreditServiceModal
-        fields = ['título', 'descrição']
+        fields = [
+            'título',
+            'descrição',
+            # 'name_id',
+            # 'serviço'
+            ]

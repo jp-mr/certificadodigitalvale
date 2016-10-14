@@ -3,14 +3,13 @@
 **/__pycache__/*
 **/migrations/*  
 
-## 
+## DevEnv
 *.src
 *.sqlite3
 public/
 design/
-
-## DevEnv
 DOC
+funkload_tests/
 
 ## generic files to ignore
 *~

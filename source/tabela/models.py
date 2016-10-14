@@ -1,11 +1,16 @@
 from django.db import models
-from django.conf import settings
+
 
 def upload_location(instance, filename):
     return 'produtos/%s/%s' % (instance, filename)
 
+
 class Produto(models.Model):
-    imagem = models.ImageField(upload_to=upload_location, blank=True, null=True)
+    imagem = models.ImageField(
+            upload_to=upload_location,
+            blank=True,
+            null=True,
+            )
     modelo = models.CharField(max_length=80)
     bloco_vermelho_validade = models.CharField(max_length=80, blank=True)
     bloco_vermelho_preço = models.CharField(max_length=80, blank=True)
@@ -17,6 +22,10 @@ class Produto(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ['posição']
+
+    def __str__(self):
+        return self.certificado
 
 
 class Ecnpj(Produto):
@@ -25,10 +34,6 @@ class Ecnpj(Produto):
 
     class Meta:
         verbose_name_plural = "e-CNPJ"
-        ordering = ['posição']
-
-    def __str__(self):
-        return self.certificado
 
 
 class Ecpf(Produto):
@@ -37,10 +42,6 @@ class Ecpf(Produto):
 
     class Meta:
         verbose_name_plural = "e-CPF"
-        ordering = ['posição']
-
-    def __str__(self):
-        return self.certificado
 
 
 class NFe(Produto):
@@ -49,7 +50,3 @@ class NFe(Produto):
 
     class Meta:
         verbose_name_plural = "NF-e"
-        ordering = ['posição']
-
-    def __str__(self):
-        return self.certificado
