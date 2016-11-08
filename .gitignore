@@ -1,7 +1,11 @@
 ## python files to ignore
 *.pyc
 **/__pycache__/*
+<<<<<<< HEAD
+#**/migrations/*  
+=======
 ##**/migrations/*  
+>>>>>>> 6f832ca49481f5777742f5da0a5876a925262386
 
 ## DevEnv
 *.src
@@ -10,6 +14,7 @@ public/
 design/
 DOC
 funkload_tests/
+/.cache
 
 ## generic files to ignore
 *~
