@@ -5,7 +5,7 @@ from certdigitvale.keywords import keys
 import os
 
 
-if 'OPENSHIFT_REPO_DIR' in os.environ:
+if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     DEBUG = False
 
@@ -16,11 +16,18 @@ if 'OPENSHIFT_REPO_DIR' in os.environ:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.getenv('OPENSHIFT_APP_NAME'),
+            'NAME': os.getenv('OPENSHIFT_POSTGRESQL_DB_NAME'),
             'USER': os.getenv('OPENSHIFT_POSTGRESQL_DB_USERNAME'),
             'PASSWORD': os.getenv('OPENSHIFT_POSTGRESQL_DB_PASSWORD'),
             'HOST': os.getenv('OPENSHIFT_POSTGRESQL_DB_HOST'),
             'PORT': os.getenv('OPENSHIFT_POSTGRESQL_DB_PORT'),
+        }
+    }
+
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+            'LOCATION': 'node111264-certificadodigitalvale.jelasticlw.com.br:11211',
         }
     }
 
