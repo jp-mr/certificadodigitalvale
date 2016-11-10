@@ -15,12 +15,12 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.getenv('OPENSHIFT_POSTGRESQL_DB_NAME'),
-            'USER': os.getenv('OPENSHIFT_POSTGRESQL_DB_USERNAME'),
-            'PASSWORD': os.getenv('OPENSHIFT_POSTGRESQL_DB_PASSWORD'),
-            'HOST': os.getenv('OPENSHIFT_POSTGRESQL_DB_HOST'),
-            'PORT': os.getenv('OPENSHIFT_POSTGRESQL_DB_PORT'),
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.getenv('MYSQL_DB_NAME'),
+            'USER': os.getenv('MYSQL_DB_USERNAME'),
+            'PASSWORD': os.getenv('MYSQL_DB_PASSWORD'),
+            'HOST': os.getenv('MYSQL_DB_HOST'),
+            'PORT': os.getenv('MYSQL_DB_PORT'),
         }
     }
 
@@ -41,6 +41,6 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
     EMAIL_USE_TLS = True
     EMAIL_DESTINY = False
 
-    STATIC_ROOT = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'static')
+    STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'static')
 
-    MEDIA_ROOT = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], 'wsgi', 'static', 'media')
+    MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'media')

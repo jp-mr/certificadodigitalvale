@@ -1,7 +1,7 @@
 import pytest
 from model_mommy import mommy
 
-from .models import CreditServiceModal
+from cs_modal.models import CreditServiceModal
 
 
 @pytest.mark.django_db

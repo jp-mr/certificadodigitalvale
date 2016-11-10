@@ -2,7 +2,7 @@ import pytest
 
 from model_mommy import mommy
 
-from .models import Ecnpj, Ecpf, NFe
+from info.models import Ecnpj, Ecpf, NFe
 
 
 models = [Ecnpj, Ecpf, NFe]
