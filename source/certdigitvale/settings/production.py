@@ -5,6 +5,7 @@ from certdigitvale.keywords import keys
 import os
 
 
+# if os.environ['USER'] == 'jelastic':
 if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     DEBUG = False
@@ -27,7 +28,7 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
     CACHES = {
         'default': {
             'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-            'LOCATION': 'node111552-certdigitvale.jelasticlw.com.br:11211',
+            'LOCATION': os.environ['MEMCACHED_LOCATION'],
         }
     }
 
