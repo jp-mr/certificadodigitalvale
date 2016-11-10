@@ -9,7 +9,7 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     DEBUG = False
 
-    SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
+    SECRET_KEY = os.environ['SECRET_TOKEN']
 
     ALLOWED_HOSTS = [os.environ['OPENSHIFT_APP_DNS']]
 
@@ -27,7 +27,7 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
     CACHES = {
         'default': {
             'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-            'LOCATION': 'node111264-certificadodigitalvale.jelasticlw.com.br:11211',
+            'LOCATION': 'node111552-certdigitvale.jelasticlw.com.br:11211',
         }
     }
 
