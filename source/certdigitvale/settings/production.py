@@ -11,7 +11,7 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     SECRET_KEY = os.environ['SECRET_TOKEN']
 
-    ALLOWED_HOSTS = [os.environ['OPENSHIFT_APP_DNS']]
+    ALLOWED_HOSTS = [os.environ['ALLOWED_HOST_URL']]
 
     DATABASES = {
         'default': {
