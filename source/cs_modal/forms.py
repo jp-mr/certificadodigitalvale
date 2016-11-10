@@ -13,6 +13,6 @@ class CreditServiceModalForm(forms.ModelForm):
         fields = [
             'título',
             'descrição',
-            'name_id',
-            'serviço'
+            # 'name_id',
+            # 'serviço'
             ]
