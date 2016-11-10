@@ -42,6 +42,6 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
     EMAIL_USE_TLS = True
     EMAIL_DESTINY = False
 
-    STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'static')
+    STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'static')
 
-    MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'media')
+    MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'static', 'media')
