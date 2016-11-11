@@ -44,4 +44,5 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'static')
 
+    MEDIA_URL = '/static/media/'
     MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'static', 'media')
