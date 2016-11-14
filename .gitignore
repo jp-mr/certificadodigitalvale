@@ -18,6 +18,9 @@ funkload_tests/
 testes_pytest/
 secret_key_dev
 htmlcov
+VarEnvServer
+.cache/
+.coverage
 
 ## generic files to ignore
 *~
