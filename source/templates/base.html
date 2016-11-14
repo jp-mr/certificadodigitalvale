@@ -196,8 +196,21 @@
     {% compress js %}
 
     <script>
-      $(document).ready(function(){
+ 
+      function InvalidMsg(textbox) {
+        if(textbox.validity.patternMismatch){
+          textbox.setCustomValidity(
+              'Email fora dos padrões. Exemplos:\nemail@exemplo.com\nemail@exemplo.com.br\nemail@exemplo.org'
+          );
+        }    
+        else {
+          textbox.setCustomValidity('');
+        }
+        return true;
+      };
 
+      $(document).ready(function(){
+        
         {% if message_sent %}
         //Gatilho do modal de confirmação do envio de email
         $('#modalEmailSent').modal('show');

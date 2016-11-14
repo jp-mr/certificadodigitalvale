@@ -22,7 +22,7 @@ class Produto(models.Model):
 
     class Meta:
         abstract = True
-        ordering = ['posição']
+        ordering = ['-posição']
 
     def __str__(self):
         return self.certificado

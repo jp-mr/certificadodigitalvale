@@ -1,7 +1,5 @@
 from django.conf import settings
 
-from certdigitvale.keywords import keys
-
 import os
 
 
@@ -32,13 +30,11 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
         }
     }
 
-    KW = keys()
-
     ## Definições para email    
     EMAIL_HOST = 'smtp.mailgun.org'
     EMAIL_PORT = 587
-    EMAIL_HOST_USER = KW[1]
-    EMAIL_HOST_PASSWORD = KW[2]
+    EMAIL_HOST_USER = ''
+    EMAIL_HOST_PASSWORD = ''
     EMAIL_USE_TLS = True
     EMAIL_DESTINY = False
 

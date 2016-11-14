@@ -7,14 +7,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #third party apps
+    # Third Party Apps
     'compressor',
     'coverage',
     'crispy_forms',
     #'debug_toolbar',
     'markdown_deux',
     'pagedown',
-    #project apps
+    # Project Apps
     'core',
     'cs_modal',
     'info',
