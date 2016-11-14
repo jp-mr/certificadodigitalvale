@@ -15,6 +15,9 @@ design/
 DOC
 funkload_tests/
 /.cache
+testes_pytest/
+secret_key_dev
+htmlcov
 
 ## generic files to ignore
 *~
