@@ -9,7 +9,7 @@ class EcnpjForm(forms.ModelForm):
 
     class Meta:
         model = Ecnpj
-        fields = "__all__"
+        fields = ['título', 'descrição']
 
 
 class EcpfForm(forms.ModelForm):
@@ -17,7 +17,7 @@ class EcpfForm(forms.ModelForm):
 
     class Meta:
         model = Ecpf
-        fields = "__all__"
+        fields = ['título', 'descrição']
 
 
 class NFeForm(forms.ModelForm):
@@ -25,4 +25,4 @@ class NFeForm(forms.ModelForm):
 
     class Meta:
         model = NFe
-        fields = "__all__"
+        fields = ['título', 'descrição']
