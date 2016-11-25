@@ -3,9 +3,9 @@
 export DJANGO_SETTINGS_MODULE='certdigitvale.settings'
 
 # Activate the virtual environment
-source $HOME/venv/bin/activate
+source /home/certdigitalvale/venv/bin/activate
 
-cd $SOURCE_DIR
+cd /home/certdigitalvale/app/certificadodigitalvale/source/
 
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
