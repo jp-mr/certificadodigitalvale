@@ -3,7 +3,7 @@
 export DJANGO_SETTINGS_MODULE='certdigitvale.settings'
 
 # Activate the virtual environment
-source $VIRTUAL_ENV/bin/activate
+source $HOME/venv/bin/activate
 
 cd $SOURCE_DIR
 
