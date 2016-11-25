@@ -3,8 +3,7 @@ from django.conf import settings
 import os
 
 
-# if os.environ['USER'] == 'jelastic':
-if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
+if os.environ['ENVIRONMENT'] == 'production':
 
     DEBUG = False
 
@@ -14,12 +13,12 @@ if 'OPENSHIFT_CLOUD_DOMAIN' in os.environ:
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': os.getenv('MYSQL_DB_NAME'),
-            'USER': os.getenv('MYSQL_DB_USERNAME'),
-            'PASSWORD': os.getenv('MYSQL_DB_PASSWORD'),
-            'HOST': os.getenv('MYSQL_DB_HOST'),
-            'PORT': os.getenv('MYSQL_DB_PORT'),
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('DB_NAME'),
+            'USER': os.getenv('DB_USERNAME'),
+            'PASSWORD': os.getenv('DB_PASSWORD'),
+            'HOST': os.getenv('DB_HOST'),
+            'PORT': os.getenv('DB_PORT'),
         }
     }
 
