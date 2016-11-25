@@ -37,7 +37,6 @@ if os.environ['ENVIRONMENT'] == 'production':
     EMAIL_USE_TLS = True
     EMAIL_DESTINY = False
 
-    STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'static')
+    STATIC_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'static')
 
-    MEDIA_URL = '/static/media/'
-    MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'static', 'media')
+    MEDIA_ROOT = os.path.join(os.environ['REPO_DIR'], 'public', 'media')
