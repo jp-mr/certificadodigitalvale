@@ -2,6 +2,7 @@ from django.conf import settings
 from django.core.mail import EmailMessage
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
+from django.utils.cache import patch_response_headers
 
 from .forms import ContactForm
 from cs_modal.models import CreditServiceModal
@@ -66,7 +67,9 @@ def home(request):
     if msg_sent:
         context['message_sent'] = 'message_sent'
 
-    return render(request, template, context)
+    response = render(request, template, context)
+    patch_response_headers(response, cache_timeout=7884000)
+    return response
 
 
 def ecnpj(request):
@@ -83,7 +86,9 @@ def ecnpj(request):
             'Infos': infos,
             }
 
-    return render(request, template, context)
+    response = render(request, template, context)
+    patch_response_headers(response, cache_timeout=7884000)
+    return response
 
 
 def ecpf(request):
@@ -100,7 +105,9 @@ def ecpf(request):
             'Infos': infos,
             }
 
-    return render(request, template, context)
+    response = render(request, template, context)
+    patch_response_headers(response, cache_timeout=7884000)
+    return response
 
 
 def nfe(request):
@@ -118,4 +125,6 @@ def nfe(request):
             'Infos': infos,
             }
 
-    return render(request, template, context)
+    response = render(request, template, context)
+    patch_response_headers(response, cache_timeout=7884000)
+    return response

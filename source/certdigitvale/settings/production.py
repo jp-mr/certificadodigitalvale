@@ -22,12 +22,12 @@ if os.environ['ENVIRONMENT'] == 'production':
         }
     }
 
-    # CACHES = {
-    #     'default': {
-    #         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-    #         'LOCATION': os.environ['MEMCACHED_LOCATION'],
-    #     }
-    # }
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+            'LOCATION': os.environ['MEMCACHED_LOCATION'],
+        }
+    }
 
     ## Definições para email    
     EMAIL_HOST = 'smtp.mailgun.org'
