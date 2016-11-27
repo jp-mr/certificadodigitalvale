@@ -1,5 +1,6 @@
 coverage==4.2
 Django==1.10.2
+django-anymail==0.6.1
 django-appconf==1.0.2
 django-compressor==2.1
 django-crispy-forms==1.6.0
@@ -15,6 +16,7 @@ psycopg2==2.6.2
 py==1.4.31
 python-memcached==1.58
 rcssmin==1.0.6
+requests==2.12.1
 rjsmin==1.0.12
 six==1.10.0
 sqlparse==0.2.1

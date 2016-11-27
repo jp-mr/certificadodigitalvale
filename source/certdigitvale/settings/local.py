@@ -8,6 +8,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Third Party Apps
+    'anymail',
     'compressor',
     'coverage',
     'crispy_forms',
@@ -35,7 +36,6 @@ INSTALLED_APPS = [
 # Para testar localmente o envio de email rode em outra 
 # instância do terminal o comando:
 # $python -m smtpd -n -c DebuggingServer localhost:1025
-
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 EMAIL_HOST_USER = 'test@domain.com'

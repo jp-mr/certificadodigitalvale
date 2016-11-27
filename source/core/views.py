@@ -31,7 +31,7 @@ def home(request):
             email = form.cleaned_data.get('email')
             subject = form.cleaned_data.get('assunto')
             message = form.cleaned_data.get('mensagem')
-            from_email = "%s <%s>" % (name, email) # RFC 5322
+            from_email = 'certificadodigitalvale@gmail.com' # "%s <%s>" % (name, email) # RFC 5322
             to_email = ['certificadodigitalvale@gmail.com', ]
             reply_to = [email,]
 

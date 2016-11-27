@@ -7,7 +7,6 @@ class ContactForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        #self.fields['nome'].widget.attrs['placeholder'] = 'Digite seu nome completo'
 
         self.fields['nome'].widget.attrs = {
                 'placeholder': 'Digite seu nome completo',
@@ -27,14 +26,14 @@ class ContactForm(forms.Form):
                 }
         self.fields['mensagem'].widget.attrs = {
                 'placeholder': 'Digite sua mensagem',
-                'oninvalid': "this.setCustomValidity('Por favor, preencha o campo com o seu nome')",
+                'oninvalid': "this.setCustomValidity('Por favor, preencha o campo com a sua mensagem')",
                 'oninput':"setCustomValidity('')",
                 }
 
     nome = forms.CharField()
     email = forms.EmailField()
     assunto = forms.CharField()
-    mensagem = forms.CharField()
+    mensagem = forms.CharField(widget=forms.Textarea)
 
     # def clean_email(self):
 

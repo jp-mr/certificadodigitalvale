@@ -29,12 +29,13 @@ if os.environ['ENVIRONMENT'] == 'production':
         }
     }
 
-    ## Definições para email    
-    EMAIL_HOST = 'smtp.mailgun.org'
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = ''
-    EMAIL_HOST_PASSWORD = ''
-    EMAIL_USE_TLS = True
+    ANYMAIL = {
+        'MAILGUN_API_KEY': os.environ['MAILGUN_API_KEY'],
+        'MAILGUN_SENDER_DOMAIN': os.environ['MAILGUN_SENDER_DOMAIN'],
+        }
+
+    EMAIL_BACKEND = "anymail.backends.mailgun.MailgunBackend"
+
     EMAIL_DESTINY = False
 
     STATIC_URL = '/public/static/'
