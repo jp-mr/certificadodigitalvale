@@ -24,7 +24,8 @@ try:
     SECRET_KEY = open(os.path.join(BASE_DIR, "secret_key_dev"), 'r').readline()
 
 except:
-    pass
+    SECRET_KEY = os.environ['SECRET_TOKEN']
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
