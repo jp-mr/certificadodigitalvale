@@ -429,6 +429,10 @@
   width: 50%;
 }
 
+textarea.form-control {
+  min-height: 200px;
+}
+
 .contact-modal .modal {
   top: 20%;
 }
