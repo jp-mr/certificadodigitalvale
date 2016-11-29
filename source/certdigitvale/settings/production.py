@@ -9,7 +9,10 @@ if os.environ['ENVIRONMENT'] == 'production':
 
     SECRET_KEY = os.environ['SECRET_TOKEN']
 
-    ALLOWED_HOSTS = [os.environ['ALLOWED_HOST_URL']]
+    ALLOWED_HOSTS = [
+            os.environ['ALLOWED_HOST_URL'],
+            os.environ['ALLOWED_HOST_URL_WWW']
+            ]
 
     DATABASES = {
         'default': {
