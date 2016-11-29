@@ -66,7 +66,7 @@ class CoreTest(TestCase):
         response = self.client.post(reverse('core:home'), self.valid_post_email)
         email = mail.outbox[0]
         print(email)
-        self.assertEqual(email.from_email, 'Michel Rodrigues <email@teste.com>')
+        self.assertEqual(email.from_email, 'certificadodigitalvale@gmail.com')
         self.assertEqual(email.subject, 'TESTE')
         self.assertEqual(
                 email.body,

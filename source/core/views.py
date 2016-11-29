@@ -16,7 +16,7 @@ from tabela.models import (
         Ecpf as TabelaEcpf,
         NFe as TabelaNFe,
         )
-from tabela.utilities import table
+from .utilities import table
 
 
 def home(request):

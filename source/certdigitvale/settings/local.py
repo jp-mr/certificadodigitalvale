@@ -12,7 +12,7 @@ INSTALLED_APPS = [
     'compressor',
     'coverage',
     'crispy_forms',
-    #'debug_toolbar',
+    'debug_toolbar',
     'markdown_deux',
     'pagedown',
     # Project Apps
@@ -55,4 +55,7 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
     )
 
-COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter', 'compressor.filters.cssmin.CSSMinFilter']
+COMPRESS_CSS_FILTERS = [
+        'compressor.filters.css_default.CssAbsoluteFilter',
+        'compressor.filters.cssmin.CSSMinFilter'
+        ]

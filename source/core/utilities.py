@@ -1,3 +1,13 @@
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.core.cache import cache
+
+
+@receiver(post_save)
+def clear_the_cache(**kwargs):
+    cache.clear()
+
+
 def table(model_class):
 
     produtos = list(model_class.objects.all())
