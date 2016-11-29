@@ -25,18 +25,18 @@ class Ecnpj(Info):
 
     class Meta:
         verbose_name_plural = "e-CNPJ"
-        #ordering = ['posição']
+        ordering = ['título']
 
 
 class Ecpf(Info):
 
     class Meta:
         verbose_name_plural = "e-CPF"
-        #ordering = ['posição']
+        ordering = ['título']
 
 
 class NFe(Info):
 
     class Meta:
         verbose_name_plural = "NF-e"
-        #ordering = ['posição']
+        ordering = ['título']

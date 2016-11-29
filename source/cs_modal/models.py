@@ -12,6 +12,7 @@ class CreditServiceModal(models.Model):
 
     class Meta:
         verbose_name_plural = "Credit Service Modal"
+        ordering = ['serviço']
 
     def __str__(self):
         return self.serviço

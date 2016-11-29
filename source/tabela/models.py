@@ -22,7 +22,6 @@ class Produto(models.Model):
 
     class Meta:
         abstract = True
-        ordering = ['-posição']
 
     def __str__(self):
         return self.certificado
@@ -34,6 +33,7 @@ class Ecnpj(Produto):
 
     class Meta:
         verbose_name_plural = "e-CNPJ"
+        ordering = ['posição']
 
 
 class Ecpf(Produto):
@@ -42,6 +42,7 @@ class Ecpf(Produto):
 
     class Meta:
         verbose_name_plural = "e-CPF"
+        ordering = ['posição']
 
 
 class NFe(Produto):
@@ -50,3 +51,4 @@ class NFe(Produto):
 
     class Meta:
         verbose_name_plural = "NF-e"
+        ordering = ['posição']
