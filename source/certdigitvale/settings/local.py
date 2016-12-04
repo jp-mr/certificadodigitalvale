@@ -12,7 +12,7 @@ INSTALLED_APPS = [
     'compressor',
     'coverage',
     'crispy_forms',
-    'debug_toolbar',
+    #'debug_toolbar',
     'markdown_deux',
     'pagedown',
     # Project Apps
@@ -22,16 +22,16 @@ INSTALLED_APPS = [
     'tabela',
 ]
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'certdigit',
-#        'USER': 'testdjango',
-#        'PASSWORD': 'senha123',
-#        'HOST': 'localhost',
-#        'PORT': 5432,
-#    }
-#}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'certdigit',
+#         'USER': 'testdjango',
+#         'PASSWORD': 'senha123',
+#         'HOST': 'localhost',
+#         'PORT': 5432,
+#     }
+# }
 
 # Para testar localmente o envio de email rode em outra 
 # instância do terminal o comando:
