@@ -2,7 +2,7 @@ from django.db import models
 
 
 def upload_location(instance, filename):
-    return 'produtos/%s/%s' % (instance, filename)
+    return 'produtos/{}/{}'.format(instance, filename)
 
 
 class Produto(models.Model):

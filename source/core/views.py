@@ -115,7 +115,6 @@ def nfe(request):
     produtos, tabela_nfe = table(TabelaNFe)
 
     infos = InfoNFe.objects.all()
-
     template = 'certificado-digital/nf-e.html'
     context = {
             'produtos': produtos,
