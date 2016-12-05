@@ -18,22 +18,22 @@ def append_attr(num, modelos):
     # exibido
 
     if num == 0:
-        modelos['validade'] = modelos['bloco_vermelho_validade']
-        modelos['preço'] = modelos['bloco_vermelho_preço']
-        modelos['cor_bloco'] = 'meses12-nfe'
+        modelos.validade = modelos.bloco_vermelho_validade
+        modelos.preço = modelos.bloco_vermelho_preço
+        modelos.cor_bloco = 'meses12-nfe'
     elif num == 1:
-        modelos['validade'] = modelos['bloco_verde_validade']
-        modelos['preço'] = modelos['bloco_verde_preço']
-        modelos['cor_bloco'] = 'meses24-nfe'
+        modelos.validade = modelos.bloco_verde_validade
+        modelos.preço = modelos.bloco_verde_preço
+        modelos.cor_bloco = 'meses24-nfe'
     else:
-        modelos['validade'] = modelos['bloco_azul_validade']
-        modelos['preço'] = modelos['bloco_azul_preço']
-        modelos['cor_bloco'] = 'meses36'
+        modelos.validade = modelos.bloco_azul_validade
+        modelos.preço = modelos.bloco_azul_preço
+        modelos.cor_bloco = 'meses36'
 
 
-def table2(model_class):
+def table(model_class):
 
-    produtos = list(model_class.objects.values())
+    produtos = list(model_class.objects.all())
 
     # recebe por meio do método .append os valor 0 ou 1
     # 0 se somente um bloco estiver preenchido
@@ -42,33 +42,33 @@ def table2(model_class):
 
     # CSS para a primeira e a última linha da tabela
     if produtos:
-        produtos[0]['first_row'] = 'first-row'
-        produtos[-1]['last_row'] = 'last-row'
+        produtos[0].first_row = 'first-row'
+        produtos[-1].last_row = 'last-row'
 
     # Verifica se há uma imagem e passa um valor para usar um atributo CSS
     # do contrário, centraliza o texto em dois blocos brancos
     # Verifica os blocos vazios e passa um valor para usar a propriedade CSS
     # "display:none", usado em larguras <= 600px
     for modelos in produtos:
-        if modelos['imagem']:
-            modelos['img_produto'] = 'img-product'
+        if modelos.imagem:
+            modelos.img_produto = 'img-product'
 
-        if not modelos['bloco_vermelho_validade'] and not modelos['bloco_vermelho_preço']:
-            modelos['vermelho_vazio'] = "hide-block"
+        if not modelos.bloco_vermelho_validade and not modelos.bloco_vermelho_preço:
+            modelos.vermelho_vazio = "hide-block"
 
-        if not modelos['bloco_verde_validade'] and not modelos['bloco_verde_preço']:
-            modelos['verde_vazio'] = "hide-block"
+        if not modelos.bloco_verde_validade and not modelos.bloco_verde_preço:
+            modelos.verde_vazio = "hide-block"
 
-        if not modelos['bloco_azul_validade'] and not modelos['bloco_azul_preço']:
-            modelos['azul_vazio'] = "hide-block"
+        if not modelos.bloco_azul_validade and not modelos.bloco_azul_preço:
+            modelos.azul_vazio = "hide-block"
 
         # Se a página for a NF-e, executa a verificação para e escolha de qual
         # estrutura de tabela utitlizar
         if model_class.certificado == 'PJ NF-e':
 
-            bloco_vermelho = [ v for k, v in modelos.items() if k.startswith('bloco_vermelho')]
-            bloco_verde = [ v for k, v in modelos.items() if k.startswith('bloco_verde')]
-            bloco_azul = [ v for k, v in modelos.items() if k.startswith('bloco_azul')]
+            bloco_vermelho = [ v for k, v in vars(modelos).items() if k.startswith('bloco_vermelho')]
+            bloco_verde = [ v for k, v in vars(modelos).items() if k.startswith('bloco_verde')]
+            bloco_azul = [ v for k, v in vars(modelos).items() if k.startswith('bloco_azul')]
 
             blocos = [bloco_vermelho, bloco_verde, bloco_azul]
 
@@ -102,7 +102,7 @@ def table2(model_class):
 
 
 
-def table(model_class):
+def table2(model_class):
 
     produtos = list(model_class.objects.all())
 
