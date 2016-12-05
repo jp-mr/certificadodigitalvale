@@ -31,7 +31,7 @@ def append_attr(num, modelos):
         modelos['cor_bloco'] = 'meses36'
 
 
-def table(model_class):
+def table2(model_class):
 
     produtos = list(model_class.objects.values())
 
@@ -52,7 +52,6 @@ def table(model_class):
     for modelos in produtos:
         if modelos['imagem']:
             modelos['img_produto'] = 'img-product'
-            modelos['imagem'] = '/media/' + modelos['imagem']
 
         if not modelos['bloco_vermelho_validade'] and not modelos['bloco_vermelho_preço']:
             modelos['vermelho_vazio'] = "hide-block"
@@ -103,7 +102,7 @@ def table(model_class):
 
 
 
-def table2(model_class):
+def table(model_class):
 
     produtos = list(model_class.objects.all())
 
