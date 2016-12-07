@@ -34,21 +34,7 @@ class CoreTest(TestCase):
     def test_has_form_on_context(self):
         response = self.client.get(reverse('core:home'))
         self.assertIsInstance(response.context['form'], ContactForm)
-
-    # def test_show_form_with_errors(self):
-    #     response = self.client.post(
-    #             reverse('core:home'),
-    #             data={'email': ''}
-    #             )
-    #     self.assertEqual(response.status_code, 200)
-    #     self.assertTemplateUsed(response, 'forms.html')
-    #     self.assertIsInstance(response.context['form'], ContactForm)
-    #     self.assertFormError(
-    #             response,
-    #             form='form',
-    #             field='email',
-    #             errors='This field is required.'
-    #             )
+        self.assertTemplateUsed(response, 'forms.html')
 
     def test_contact_email_field_pattern(self):
         self.assertFieldOutput(
@@ -60,6 +46,7 @@ class CoreTest(TestCase):
     def test_send_contact_email(self):
         self.assertEquals(len(mail.outbox), 0)
         response = self.client.post(reverse('core:home'), self.valid_post_email)
+        self.assertEqual(response.status_code, 302)
         self.assertEquals(len(mail.outbox), 1)
 
     def test_content_contact_email(self):
