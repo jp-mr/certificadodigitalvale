@@ -36,7 +36,7 @@ class Command(BaseCommand):
     def _read_file(self, options):
         file_text = options['file']
         data = file_text.readlines()
-        print(data)
+        #print(data)
         return data
 
     def _parse_data(self, data):
@@ -54,15 +54,19 @@ class Command(BaseCommand):
         # dicionários
         iterador = iter(rgx)
         parsed_data = []
-        for t, d in zip(*[iterador]*2):
+        for titulo, descricao in zip(*[iterador]*2):
+            desc = ''
+            for linha in descricao:
+                desc += linha.strip('\n')
             parsed_data.append({
-                'título': t,
-                'descrição': d,
+                'título': titulo,
+                'descrição': desc,
                 })
 
         # Desempacota simultaneamente os itens de duas listas criando uma lista de dicionários
         # lista = [{'titulo': t, 'descricao': d} for t, d in zip(tit, desc)]
 
+        #print(parsed_data)
         return parsed_data
 
     def _save_data(self, parsed_data, options):
@@ -71,6 +75,7 @@ class Command(BaseCommand):
             obj = self.cls[cls]
             obj.título = data['título']
             obj.descrição = data['descrição']
+            # obj.save()
             print(type(obj))
             print('Object "%s" created\n' % obj.título)
 

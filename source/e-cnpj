@@ -1,0 +1,400 @@
+<Acessar o e-CAC>
+O e-CAC (Centro Virtual de Atendimento ao Contribuinte) é o portal de serviços que permite a comunicação via internet entre o contribuinte e a Receita Federal do Brasil (RFB).
+Para usufruir alguns serviços disponíveis no e-CAC com segurança é indicado obter um Certificado Digital e-CPF ou e-CNPJ. Em ambos os casos o cliente Serasa pode optar pelos modelos A1 (espécie software para ser instalado no computador, com validade de 1 ano) e A3 (cartão ou token, com validade de 1, 2 ou 3 anos).
+O e-CPF é indicado para acesso a serviços de pessoa física ou para representante legal da empresa, que nesse caso poderá visualizar uma série de serviços online da pessoa jurídica. Existe ainda a opção “alterar perfil de acesso”, usada quando uma Pessoa Física deseja visualizar os dados da Pessoa Jurídica ou o contrário.
+Já o Certificado Digital e-CNPJ, destinado à própria Pessoa Jurídica, sendo que também pode ser usado para receber uma procuração com o objetivo de realizar serviços de uma outra Pessoa Jurídica, como nos casos dos escritórios de contabilidade, por exemplo.
+
+Por meio do portal e-CAC é possível:
+
+**CEI (Cadastro Específico do INSS)**
+
+Fazer inscrição, consultar e alterar o CEI (Cadastro Específico do INSS).
+
+**Situação fiscal**
+
+Verificar a situação fiscal.
+
+**2ª via das DCTF**
+
+Consultar a 2ª via das declarações DCTF (Declaração de Débitos e Créditos Tributários Federais), DIPJ (Declaração de Informações Econômico-fiscais da Pessoa Jurídica), DIRF (Declaração do Imposto sobre a Renda Retido na Fonte), DIMOB (Declaração de Informações sobre Atividades Imobiliárias), DITR (Declaração do Imposto sobre a Propriedade Territorial Rural), DERC (Declaração de Rendimentos Pagos a Consultores por Organismos Internacionais), DACON (Demonstrativo de Apuração de Contribuições Sociais), DIMOF (Declaração de Informações sobre Movimentação Financeira), DASN (Declaração Anual do Simples Nacional), DBF (Declaração de Benefícios Fiscais).
+
+**Verificar rendimentos**
+
+Verificar rendimentos informados por fontes pagadoras.
+
+**Extrato do Imposto de Renda**
+
+Obter extrato das últimas declarações do Imposto de Renda de Pessoa Física.
+
+**DARF e REDARF**
+
+Consultar dívidas ativas na União, corrigir pagamentos e parcelar débitos do DARF (Documento de Arrecadação de Receitas Federais) e fazer a retificação REDARF.
+
+**Atendimento da Receita Federal**
+
+Agendar serviços em postos de atendimentos da Receita Federal.
+
+**Procuração eletrônica**
+
+Cadastrar, consultar e cancelar procuração eletrônica.
+
+Serviços exclusivos para e-CPF:
+
+**Cadastro de Pessoa Física**
+
+Alterar ou complementar o Cadastro de Pessoa Física (CPF).
+
+**Imposto de Renda de Pessoa Física**
+
+Obter as Declarações de Imposto de Renda de Pessoa Física de anos anteriores, verificar se o CPF possui alguma pendência com a Receita e acompanhar o status do imposto enviado, identificar se está ou não na Malha Fina, e saber o motivo.
+
+**Serviços do DIRPF**
+
+Dispor de serviços relacionados ao DIRPF - Declaração do Imposto sobre a Renda da Pessoa Física, como: Cópia de Declaração; Declaração Pré-Preenchida; Retificadora OnLine (Extrato da DIRPF); Pedido de Antecipação de Análise da DIRPF.
+
+**DTE**
+
+Optar pelo Domicílio Tributário Eletrônico (DTE).
+
+**Antecipação da DIRPF**
+
+Pedir a Antecipação de Análise da DIRPF.
+
+**SPED Contábil e Fiscal – EFD e ECD**
+
+Acessar o Sistema Público de Escrituração Contábil e Fiscal da empresa (SPED Contábil e Fiscal – EFD e ECD, caso seja o procurador da empresa ou nos casos de empregador autônomo).
+
+Serviços exclusivos para e-CNPJ:
+
+**Comprovante de CNPJ**
+
+Consultar e emitir o comprovante do Cadastro Nacional de Pessoa Jurídica (CNPJ).
+
+**Acompanhamento Econômico-Tributário**
+
+Cadastrar os responsáveis pelo Acompanhamento Econômico-Tributário Diferenciado.
+
+**Declaração de Débitos e Créditos**
+
+Consultar as intimações relativas à Declaração de Débitos e Créditos Tributários Federais (DCTF).
+
+**Simples Nacional**
+
+Verificar ação fiscal do Simples Nacional.
+
+**DIPJ e Dmed**
+
+Visualizar as últimas Declarações de Informações Econômico-Fiscais de Pessoa Jurídica (DIPJ) e Declarações de Serviços Médicos e de Saúde (Dmed).
+
+**Consultar o MEI**
+
+Consultar declaração do Microempreendedor Individual (MEI).
+
+**Declaração do Simples Nacional**
+
+Aderir à Declaração Anual do Simples Nacional.
+
+**Intimações, Malha Fiscal e Cobrança**
+
+Verificar Intimações, Malha Fiscal e Cobrança; Avisos de Cobrança; Intimações Malha DCTF.
+
+**Extrato do DCTF**
+
+Obter Extrato do Processamento – DCTF.
+
+**Consulta de Rendimentos**
+
+Consultar Rendimentos Informados por Fontes Pagadoras. Com os Certificados Digitais da Serasa, você tem mais segurança para realizar importantes operações no e-CAC, no Conectividade Social, no Simples Nacional e em outros portais de órgãos fiscalizadores e administrações tributárias.
+
+<Assinar a escrituração contábil e fiscal>
+
+O Sped Fiscal ou EFD (Escrituração Fiscal Digital) é uma das vertentes do Sped (Sistema Público de Escrituração Digital), que consiste na tramitação de documentos fiscais de empresas e pessoas físicas no meio digital. No Sped Fiscal é possível enviar informações e a apuração de impostos ao Fisco. O arquivo com os dados devem ser assinados digitalmente com Certificado Digital para garantir segurança e validade aos dados transmitidos.
+
+Para realizar operações no Sped Fiscal é indicada a utilização do Certificado Digital e-CPF ou e-CNPJ dos dois tipos (A1 e A3).
+
+Diferentes tipos de Certificado Digital:
+
+e-cpf
+e-cnpj
+
+Vantagens do Certificado Digital no Sped:
+
+**Dispensar a emissão de papel**
+
+Dispensar a emissão e o armazenamento de papel;
+
+**Diminuir os custos**
+
+Diminuir os custos operacionais;
+
+**Consultas**
+
+Consultar no Centro Virtual de Atendimento ao Contribuinte (e-CAC) quais membros acessaram a Escrituração Digital;
+
+**Habilitar acessos**
+
+Habilitar usuários externos a acessar o sistema do Sped;
+
+**Assinatura digital**
+
+Assinar digitalmente e enviar a escrituração contábil ao Sped;
+
+**Documentação fiscais**
+
+Informar os documentos fiscais referentes ao ICMS e ao IPI;
+
+**Emitir notas fiscais eletrônicas**
+
+Emitir notas fiscais eletrônicas, entre outras vantagens.
+
+Vantagens do Projeto Sped Fiscal:
+
+**Aumentar acessos**
+
+Aumentar o acesso às informações;
+
+**Unificar informações**
+
+Unificar as informações prestadas;
+
+**Fiscalização**
+
+Fortalecer a fiscalização;
+
+**Cruzamentos dos dados**
+
+Possibilitar o cruzamentos dos dados fiscais e contábeis.
+
+<SPED>
+O Sped (Sistema Público de Escrituração Digital) consiste no armazenamento, na validação e na recepção de documentos contábeis e fiscais de empresas e pessoas jurídicas no meio digital. Fazem parte do Sped os seguintes projetos: Escrituração Contábil Digital (ECD), também conhecido como Sped Contábil; Escrituração Fiscal Digital (EFD), ou Sped Fiscal; a Nota Fiscal Eletrônica (NF-e) e Conhecimento de Transporte Eletrônico (CT-e). Saiba mais
+
+Cadastrar, cancelar e consultar procuração no e-CAC
+Cadastrar, cancelar e consultar procuração no e-CAC (Centro Virtual de Atendimento ao Contribuinte);
+
+<Acessar o Conectividade Social ICP>
+O Conectividade Social ICP é o portal da Caixa para a troca de informações referentes ao FGTS e à Previdência Social para as empresas. Esse canal eletrônico substitui o antigo Conectividade Social e dispensa a instalação de software para transmissão de arquivos, sendo necessário a utilização de Certificado Digital para acessar o sistema que é totalmente online.
+e-Simples A3 Cartão e Leitora
+Indicado para PMEs
+Dispositivo armazenado em dispositivo portátil
+e-Simples A3 Token
+Indicado para PMEs
+Não requer o uso da leitora
+
+No sistema do Conectividade Social é possível:
+
+**Recolhimento do FGTS**
+
+Transmitir dados gerados no sistema de recolhimento do FGTS (SEFIP) e informações à previdência social.
+
+**Recolhimento da GRRF**
+
+Disponibilização da guia de recolhimento rescisório (GRRF).
+
+**Extratos do trabalhador e de fins recisórios**
+
+Visualizar e imprimir extratos, tais como o do trabalhador e para fins rescisórios.
+
+**Desligamento de funcionários**
+
+Anunciar desligamento e afastamentos de funcionários.
+
+**Mensagens da Caixa**
+
+Receber mensagens e comunicados da Caixa.
+
+**Resguardo de irregularidades**
+
+Resguardar a empresa contra possíveis irregularidades.
+
+**Procuração eletrônica**
+
+Cadastrar procuração eletrônica.
+
+<Enviar e fazer retificações no CAGED>
+
+O CAGED é o Cadastro Geral de Empregados e Desempregados do Ministério de Estado do Trabalho e Emprego que as empresas com mais de 20 funcionários devem atualizar mensalmente para o governo realizar pesquisas. O objetivo desse registro é acompanhar todo o andamento das admissões e demissões de empregados no regime CLT, bem como dar assistência aos desempregados.
+Para declarar o CAGED é necessário ter um Certificado Digital do tipo e-CPF, no caso de procurador, ou e-CNPJ se for acessar com o CNPJ da empresa.
+
+Há dois modelos de Certificado Digital:
+e-cpf
+e-cnpj
+
+Vantagens de utilizar o Certificado Digital no CAGED
+
+**Ministério do Trabalho e Emprego**
+
+Enviar CAGED ao Ministério do Trabalho e Emprego.
+
+**Transmitir as informações**
+
+Transmitir as informações de maneira segura e com validade jurídica.
+
+**Garantir a autenticidade**
+
+Garantir a autenticidade e a confidencialidade dos dados prestados.
+
+<Acessar ao Receitanet>
+Enviar pelo Receitanet demonstrativos para a Receita Federal, como DCTF (Declaração de Débitos e Créditos Tributários Federais), DIPJ (Declaração de Informações Econômico-fiscais da Pessoa Jurídica), DIRF (Declaração do Imposto sobre a Renda Retido na Fonte), DIMOB (Declaração de Informações sobre Atividades Imobiliárias), DITR (Declaração do Imposto sobre a Propriedade Territorial Rural), DERC(Declaração de Rendimentos Pagos a Consultores por Organismos Internacionais), DACON (Demonstrativo de Apuração de Contribuições Sociais), DIMOF (Declaração de Informações sobre Movimentação Financeira), DASN (Declaração Anual do Simples Nacional), DBF (Declaração de Benefícios Fiscais);
+
+<INPI>
+Para garantir a exclusividade de sua marca, ideia ou produto e evitar que sua produção intelectual seja copiada, igualada e, em casos mais graves, apropriada por terceiros, adquira seu Certificado Digital para fazer seu registro no INPI o quanto antes.
+Os serviços online do INPI podem ser realizados com a utilização de Certificado Digital e-CNPJ e e-CPF, para serviços destinos a pessoas jurídicas e físicas, respectivamente. Ambos podem usar os modelos A1 e A3, conforme a preferência do cliente Serasa.
+Benefícios ao acessar o portal do INPI com Certificado Digital:
+
+**Cadastro no INPI**
+
+Credenciar-se no INPI e cadastrar-se para enviar as petições.
+
+**Solicitação de Patente**
+
+Solicitar o registro online de sua patente junto ao INPI com segurança e facilidade nos sistemas e-Patente, Depósito Eletrônico de Documentos e SisBioList (Sistema de Listagens de Sequências Biológicas).
+
+**Licenciamento de Marca/Patente**
+
+Depois de aprovada, licenciar a patente de sua marca ou produto de forma segura.
+
+**Segurança de Informações**
+
+Transmitir as informações de forma autêntica e confidencial.
+
+**Status do registro**
+
+Ter acesso ao andamento de seu registro 24 horas por dia.
+
+**Diretoria de Patentes (DIRPA)**
+
+Fazer petição eletrônica na Diretoria de Patentes (DIRPA).
+
+<Acessar ao Sisprouni>
+Coordenador ou representante de instituição de ensino, cadastrado pelo mantenedor, pode acessar o sistema informatizado do ProUni - Sisprouni (Programa Universidade Para Todos) para atualizar, suspender, transferir e encerrar Bolsas, aprovar/reprovar candidatos pré-selecionados, além de emitir Termo de Adesão e Termos Aditivos;
+
+<CEBAS>
+A Certificação das Entidades Beneficentes de Assistência Social é concedida pelo Governo Federal às instituições privadas sem fins lucrativos que atuam na área social, educacional e da saúde. Por meio dessa certificação, as entidades podem pedir a isenção de alguns tributos, entre eles o CSLL (Contribuição Sobre o Lucro Líquido) e parte patronal da contribuição previdenciária na folha de pagamento. Para acessar o SisCebas (Sistema do Cebas na Área da Educação) é indicado dispor de Certificado Digital do tipo e-CPF, se for pessoa autorizada, ou e-CNPJ em nome da entidade.
+
+<ComprasNET>
+O Comprasnet é o portal de compras do Governo Federal para a realização de licitações e contratações feitas pela Administração Pública Federal direta. Para acessar os diversos serviços do Comprasnet, os fornecedores devem adquirir um Certificado Digital do tipo e-CPF ou e-CNPJ. Saiba mais
+
+<Emissão de notas>
+Emitir notas fiscais eletrônicas;
+
+
+<Emitir o DANFE>
+Emitir o DANFE (Documento Auxiliar na Nota Fiscal Eletrônica);
+
+
+<Emitir CT-e>
+O Conhecimento de Transporte Eletrônico de Cargas (CT-e) é um dos pilares do SPED (Sistema Público de Escrituração Digital) e serve para fiscalizar e registrar eletronicamente os serviços de transporte de carga entre duas empresas. A validade jurídica e a autenticidade do CT-e são garantidos pela utilização de Certificado Digital do tipo e-CNPJ.
+
+
+A Serasa Experian desenvolveu o NF-e, um certificado digital específico para a emissão e o armazenamento de notas fiscais eletrônicas e de CT-e (Conhecimento de Transporte Eletrônico). O Certificado NF-e está disponível em cinco modelos para atender as necessidades de cada empresa.
+
+Confira:
+
+NF-e
+
+Disponível em cinco modelos para atender a necessidade de cada empresa;
+Pode ser emitido para alguém diferente do representante legal na Receita Federal.
+
+Vantagens do Projeto CT-e:
+
+**Eliminar a impressão dos CT-e**
+
+Elimina a impressão dos CT-e, embora ainda haja um documento em papel, o Documento Auxiliar do Conhecimento de Transporte Eletrônico (DACTE), o CT-e facilita sua utilização;
+
+**Reduzir custos**
+
+Reduz custos com a impressão e o armazenamento do documento;
+
+**Otimizar os processos**
+
+Otimiza os processos de organização e fiscalização por ser mais prático;
+
+**Simplificar as obrigações fiscais**
+
+Simplifica as obrigações fiscais, como a dispensa da AIDF (Autorização de Impressão de Documentos Fiscais).
+
+Vantagens do Certificado Digital NF-e:
+
+**Emitir CT-e**
+Emite CT-e e notas fiscais eletrônicas;
+
+**Obter o GED**
+
+Obtém o GED (Gerenciamento Eletrônico de Documentos) que organiza os documentos emitidos pelo contribuinte;
+
+**Diminuir erros de escrituração**
+Diminui erros de escrituração em razão do cadastro correto das informações;
+**Emitir o DANFE**
+
+Emite o DANFE (Documento Auxiliar na Nota Fiscal Eletrônica);
+
+**Impulsionar o relacionamento seguro**
+Impulsiona o relacionamento seguro com os clientes ao estabelecer um contato virtual com informações confiáveis;
+
+**Resguardar a empresa**
+
+Resguarda a empresa contra possíveis irregularidades;
+
+**Emitir a Manifestação de Destinatário**
+
+Emite a Manifestação de Destinatário, documento no qual o contribuinte que adquiriu a mercadoria indica se a recebeu corretamente e registra como “Ciência da Emissão”, “Confirmação da Operação”, “Desconhecimento da Operação” ou “Operação não Realizada”.
+
+<Emitir e parcelar a DAS>
+Emitir e parcelar a DAS (Documentos de Arrecadação do Simples Nacional) para empresas incluídas no Simples Nacional;
+
+<Emitir e Retificar o Redarf>
+Emitir e Retificar Documento de Arrecadação de Receitas Federais (Redarf);
+
+<Realizar transações no SISPROUNI>
+Permitir que mantenedoras de instituições de ensino realizem transações no SISPROUNI (Sistema do ProUni – Programa Universidade Para Todos), inclusive cadastrar os coordenadores, que acessam o sistema com um e-CPF;
+
+<Acessar o CNES>
+Acessar os serviços do CNES (Cadastro Nacional de Entidades Sindicais) com segurança. Sindicatos, federações e confederações podem executar serviços na página do Ministério do Trabalho e Emprego (MTE) como Solicitação de Dados Perene (SD), Atualização Sindical (SR) e Solicitação de Registro Sindical (SC);
+
+<Solicitar financiamento no Finep>
+Solicitar financiamento no programa Juros Zero no Finep (Financiadora de Estudos e Projetos); Obter alvará por meio do Certificado de Licenciamento Integrado no SIL (Sistema Integrado de Licenciamento) de seu município.
+
+<Obter o GED>
+Obter o GED (Gerenciamento Eletrônico de Documentos), que organiza os documentos emitidos pelo contribuinte;
+
+<Diminuir erros de escrituração>
+Diminuir erros de escrituração em razão do cadastro correto das informações;
+
+<Assinatura de Contratos de Câmbio>
+A Assinatura de Contratos de Câmbio dos bancos privados permite a realização de operações cambiais na internet com maior segurança, mantendo a integridade das informações. Para assinar os contratos, o Banco Central determina que os clientes utilizem Certificado Digital do tipo e-CPF se forem pessoas físicas, ou e-CNPJ no caso de pessoas jurídicas. Os procuradores que assinarem em nome de uma empresa devem adquirir o e-CNPJ.
+
+Vantagens da Assinatura de Contratos de Câmbio:
+
+**Fluxos**
+
+Melhora o fluxo operacional.
+
+**Reduzir riscos**
+
+Diminui os riscos de fraudes e erros.
+
+**Custos**
+
+Melhora os custos operacionais.
+
+Benefícios de acessar com Certificado Digital:
+
+**Consultas**
+
+Maior facilidade de consultar e verificar status dos contratos disponíveis.
+
+**Downloads**
+
+Mais praticidade ao realizar o download do contrato.
+
+**Assinaturas**
+
+Maior segurança ao assinar contratos remotamente.
+
+<Aderir ao Cadastro Positivo>
+
+Aderir ao seu Cadastro Positivo (de pessoa física) pela internet;
+
+<Utilizar o GESP>
+
+Utilizar o GESP (Gestão Eletrônica de Segurança Privada);

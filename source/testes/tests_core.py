@@ -44,15 +44,14 @@ class CoreTest(TestCase):
                 )
 
     def test_send_contact_email(self):
-        self.assertEquals(len(mail.outbox), 0)
+        self.assertEqual(len(mail.outbox), 0)
         response = self.client.post(reverse('core:home'), self.valid_post_email)
         self.assertEqual(response.status_code, 302)
-        self.assertEquals(len(mail.outbox), 1)
+        self.assertEqual(len(mail.outbox), 1)
 
     def test_content_contact_email(self):
         response = self.client.post(reverse('core:home'), self.valid_post_email)
         email = mail.outbox[0]
-        print(email)
         self.assertEqual(email.from_email, 'certificadodigitalvale@gmail.com')
         self.assertEqual(email.subject, 'TESTE')
         self.assertEqual(

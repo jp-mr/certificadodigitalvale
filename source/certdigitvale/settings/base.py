@@ -32,17 +32,35 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
-
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    ]
+
+THIRD_PARTY_APPS = [
+    'anymail',
+    'compressor',
+    'coverage',
+    'crispy_forms',
+    #'debug_toolbar',
+    'markdown_deux',
+    'pagedown',
+    ]
+
+PROJECT_APPS = [
+    'core',
+    'cs_modal',
+    'info',
+    'tabela',
+    ]
+
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     #'debug_toolbar.middleware.DebugToolbarMiddleware',

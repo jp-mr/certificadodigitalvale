@@ -1,27 +1,3 @@
-# Application definition
-
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    # Third Party Apps
-    'anymail',
-    'compressor',
-    'coverage',
-    'crispy_forms',
-    #'debug_toolbar',
-    'markdown_deux',
-    'pagedown',
-    # Project Apps
-    'core',
-    'cs_modal',
-    'info',
-    'tabela',
-]
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -33,7 +9,7 @@ INSTALLED_APPS = [
 #     }
 # }
 
-# Para testar localmente o envio de email rode em outra 
+# Para testar localmente o envio de email rode em outra
 # instância do terminal o comando:
 # $python -m smtpd -n -c DebuggingServer localhost:1025
 EMAIL_HOST = 'localhost'

@@ -27,6 +27,7 @@ def home(request):
 
         if form.is_valid():
 
+            print(form.cleaned_data)
             name = form.cleaned_data.get('nome')
             email = form.cleaned_data.get('email')
             subject = form.cleaned_data.get('assunto')
